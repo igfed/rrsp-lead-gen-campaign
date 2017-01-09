@@ -1,0 +1,97 @@
+.area-l2.section.retirement-cta {
+	background: white;
+	.retirement-cta-container {
+		display: block;
+		width: 100%;
+	}
+
+	.retirement-cta-pane {
+		display: block;
+		padding: 0 0 4em 0;
+	}
+
+	@media only screen and (min-width: 768px) {
+
+		.retirement-cta-container {
+			display: table;
+			width: 100%;
+		}
+
+		.retirement-cta-pane {
+			display: table-cell;
+			width: 50%;
+			margin: 0;
+			padding: 0 2em 0 0;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.retirement-cta-pane-content {
+		text-align: center;
+		position: relative;
+		padding: 0 4em;
+		.illustration {
+			display: block;
+			width: 50%;
+			height: auto;
+			border-radius: 50%;
+			max-width: 200px;
+			background-size: 100%;
+			margin: 0 auto 2em auto;
+			&:before {
+				content: '';
+				display: block;
+				padding-top: 100%;
+			}
+		}
+		p {
+			font-size: 2em;
+			line-height: 1.4;
+			text-align: left;
+		}
+		.outline-btn {
+			//white-space: nowrap;
+			font-size: 1.8rem;
+			margin: 1em auto 0 auto;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.retirement-cta-pane-content {
+			padding-left: 120px;
+			padding-right: 0;
+
+			.illustration {
+				position: absolute;
+				left: 0;
+				max-width: 100px;
+				margin: 0;
+			}
+			p {
+				min-height: 100px;
+			}
+			.outline-btn {
+				display: inline-block;
+				width: auto;
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+		}
+	}
+
+	.retirement-cta-pane--faa {
+		.retirement-cta-pane-content .illustration {
+			background-color: #2B4D73;
+			background-image: url(#{$imgs}/ill-contact.png);
+		}
+	}
+
+	.retirement-cta-pane--quiz {
+		.retirement-cta-pane-content .illustration {
+			background-color: #D7F3CF;
+			background-image: url(#{$imgs}/quiz/quiz-q1.png);
+		}
+	}
+}

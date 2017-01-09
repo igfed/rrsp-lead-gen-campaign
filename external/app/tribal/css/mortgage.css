@@ -1,0 +1,2024 @@
+.underline-link {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.3;
+  position: relative;
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "whitney_scmedium";
+  font-size: 1.6rem;
+  color: #0D263C;
+}
+
+.underline-link:before {
+  display: block;
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: calc(100% - 20px);
+  height: 2px;
+  top: 100%;
+  background-color: #0ed59a;
+  -webkit-transition: right .15s ease-out .15s, left .15s ease-out 0s;
+  transition: right .15s ease-out .15s, left .15s ease-out 0s;
+}
+
+.underline-link--hover:before, .areas-nav.section li a:hover span:before, .report-modal .areas-nav.container li a:hover span:before, .underline-link:hover:before, .footer .footer--links-a .internal-links li a:hover:before {
+  left: calc(100% - 20px);
+  right: 0;
+  -webkit-transition: right .15s ease-out .15s, left .15s ease-out .3s;
+  transition: right .15s ease-out .15s, left .15s ease-out .3s;
+}
+
+.ux-font--hero-title, .tp_01a {
+  font-family: "whitney_lightregular";
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  color: #0D263C;
+}
+
+.ux-font--callout-title-black, .tp_02a {
+  font-family: "whitney_lightregular";
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  color: #0D263C;
+}
+
+.ux-font--callout-title-black, .tp_02a sup {
+	font-family: "whitney_bookregular";
+	font-size:1.4rem;
+	line-height: 1rem;
+    vertical-align: super;
+}
+
+.ux-font--callout-title-green, .tp_02a-g {
+  font-family: "whitney_lightregular";
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  color: igGreen;
+}
+
+.ux-font--content-title, .tp_03a {
+  font-family: "whitney_bookregular";
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #0D263C;
+}
+
+.ux-font--accordian-menu-section-title, .tp_04a {
+  font-family: "whitney_scmedium";
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--section-title, .tp_05a {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--sub-section-title, .tp_06a {
+  font-family: "whitney_bookscregular";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.tp_06w {
+  font-family: "whitney_bookscregular";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: white;
+  text-transform: lowercase;
+}
+
+.ux-font--callout-body-copy, .tp_07a {
+  font-family: "whitney_lightregular";
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #0D263C;
+}
+
+.ux-font--large-body-copy, .tp_08a {
+  font-family: "whitney_bookregular";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #0D263C;
+}
+
+.ux-font--body-copy, .tp_09a {
+  font-family: "whitney_bookregular";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #0D263C;
+}
+
+.ux-font--body-copy, .tp_09a.nullvalue {
+	text-align:center;	
+}
+
+.ux-font--body-copy-small, .tp_09b {
+  font-family: "whitney_bookregular";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+}
+
+.ux-font--feature-body-copy, .tp_10a {
+  font-family: "whitney_scmedium";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--number-callout, .tp_11a {
+  font-family: "whitney_scmedium";
+  font-size: 9.0rem;
+  line-height: 10.0rem;
+  color: #0D263C;
+  text-transform: lowercase;
+  text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+}
+
+.ux-font--primary-button, .tp_20a {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--secondary-cta, .tp_21a {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--hyperlink, .tp_22a {
+  font-family: "whitney_semiboldregular";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #0D263C;
+}
+
+label, .ux-font--label, .tp_23a {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.tp_23w {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: white;
+  text-transform: lowercase;
+}
+
+select, input, .ux-font--input, .tp_24a {
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #666666;
+  text-transform: lowercase;
+}
+
+.ux-font--radio-button, .tp_25a {
+  font-family: "whitney_scmedium";
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #0D263C;
+  text-transform: lowercase;
+}
+
+.ux-font--steps, .tp_26a {
+  font-family: "whitney_bookregular";
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #A6A6A6;
+}
+
+.ux-footer, .tp_27a {
+  font-family: "whitney_bookregular";
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #0D263C;
+}
+
+.tp_28a {
+  font-family: "whitney_lightregular";
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #0D263C;
+}
+
+/*@media only print, only screen and (min-width: 768px) {
+.ux-font--hero-title,.tp_01a {
+	    font-size:4.0rem;
+	} 
+
+	.ux-font--callout-title-black,.tp_02a {
+	    font-size:2.4rem;
+	} 
+
+	.ux-font--callout-title-green,.tp_02a-g {
+	    font-size:2.4rem;
+	} 
+
+	.ux-font--content-title,.tp_03a {
+	    font-size:2.0rem;
+	} 
+
+	.ux-font--accordian-menu-section-title,.tp_04a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--section-title,.tp_05a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--sub-section-title,.tp_06a {
+	    font-size:1.8rem;
+	} 
+
+	.tp_06w {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--callout-body-copy,.tp_07a {
+	    font-size:2.2rem;
+	} 
+
+	.ux-font--large-body-copy,.tp_08a {
+	    font-size:2.8rem;
+	} 
+
+	.ux-font--body-copy,.tp_09a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--feature-body-copy,.tp_10a {
+	    font-size:2.2rem;
+	} 
+
+	.ux-font--number-callout,.tp_11a {
+	    font-size:9.0rem;
+	    text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+	} 
+
+	.ux-font--primary-button,.tp_20a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--secondary-cta,.tp_21a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--hyperlink,.tp_22a {
+	    font-size:1.8rem;
+	} 
+
+	label,.ux-font--label,.tp_23a {
+	    font-size:1.6rem;
+	} 
+
+	select,input,.ux-font--input,.tp_24a {
+	    font-size:1.6rem;
+	} 
+
+	.ux-font--radio-button,.tp_25a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--steps,.tp_26a {
+	    font-size:3.6rem;
+	} 
+} */
+@media only screen and (min-width: 960px) {
+  .ux-font--hero-title, .tp_01a {
+    font-size: 7.2rem;
+    line-height: 8.2rem;
+  }
+
+  .ux-font--callout-title-black, .tp_02a {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+	margin-bottom: 2em;
+  }
+
+  .ux-font--callout-title-green, .tp_02a-g {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+  }
+
+  .ux-font--content-title, .tp_03a {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+  }
+
+  .ux-font--accordian-menu-section-title, .tp_04a {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .ux-font--section-title, .tp_05a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--sub-section-title, .tp_06a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .tp_06w {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--callout-body-copy, .tp_07a {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  .ux-font--large-body-copy, .tp_08a {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
+  .ux-font--body-copy, .tp_09a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--feature-body-copy, .tp_10a {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  .ux-font--number-callout, .tp_11a {
+    font-size: 14.5rem;
+    line-height: 15.5rem;
+    text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+  }
+
+  .ux-font--primary-button, .tp_20a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--secondary-cta, .tp_21a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--hyperlink, .tp_22a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  label, .ux-font--label, .tp_23a {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  select, input, .ux-font--input, .tp_24a {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .ux-font--radio-button, .tp_25a {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .ux-font--steps, .tp_26a {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+  }
+
+  .ux-footer, .tp_27a {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  .accordian-report {
+    padding-bottom: 70px;
+    border-bottom: solid 1px #f3f4f5;
+    width: 960px;
+    margin: auto;
+  }
+
+  .tp_28a {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+}
+h3 {
+  text-transform: initial;
+}
+
+.o-row {
+  width: 100%;
+}
+
+.o-text-align-center {
+  text-align: center;
+}
+
+/* Feature starts*/
+.mortgage-section__wpr {
+  margin: 0 auto;
+}
+
+.mortgage-section__wpr--heading {
+  text-align: center;
+}
+
+.area-l2.section.mortgage-section__feature {
+  background: #eff5f3;
+}
+
+.area-l2.section.mortgage-section__feature.rates {
+  background: #fbf7eb;
+}
+
+.u-clearfix:before, .u-clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.c-button {
+  z-index: 0;
+  background: #0ed59a;
+  border: 3px solid #0ed59a;
+  border-radius: 5px;
+  padding: 7px;
+  font-family: "whitney_scmedium";
+  font-size: 1.4rem;
+  color: #0c273c;
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: lowercase;
+  min-width: 240px;
+  display: block;
+}
+
+/* Feature ends*/
+/* tips starts*/
+.section.mortgage-section__tips {
+  background: #eff5f3;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: -90px;
+}
+
+.carousel-next {
+  right: -90px;
+}
+
+.mortgage-section__tips--wpr .slick-dots li.slick-active button {
+  font-size: 0rem;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #687a87;
+  background-color: #687a87;
+  border-radius: 10px;
+}
+
+.mortgage-section__tips--wpr .slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #687a87;
+  background: none;
+  border-radius: 10px;
+  margin-left: 12px;
+}
+
+.mortgage-section__tips--wpr .slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+.mortgage-section__tips--wpr .slick-dots li {
+  display: inline-block;
+}
+
+.mortgage-section__tips--wpr .slick-dots {
+  display: block;
+  text-align: center;
+  margin: 60px auto 0 auto;
+}
+
+/* tips ends*/
+/* more starts*/
+.mortgage-section-wpr__more--content h3 {
+  text-decoration: initial;
+}
+
+.area-l2.section.mortgage-section__more {
+  background: #ffffff;
+}
+
+/* more ends*/
+/* contact starts*/
+.area-l2.section.mortgage-section__contact {
+  background: #eff5f3;
+}
+
+.area-l2.section.mortgage-section__contact.rates {
+  background: #fbf7eb;
+}
+
+.mortgage-section__contact--container {
+  width: 100%;
+  margin: auto;
+}
+
+/* contact ends*/
+/* legal starts*/
+.area-l2.section.mortgage-section__legal {
+  background: #ffffff;
+}
+
+.mortgage-section__legal h6 {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.mortgage-section__legal .arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transform: rotate(-45deg);
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+
+.mortgage-section__legal--heading {
+  text-align: center;
+  cursor: pointer;
+}
+
+.mortgage-section__legal--text {
+  color: #000000;
+  font-family: 'whitney_bookregular';
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  /* Safari */
+  transition: height 0.5s;
+}
+
+.mortgage-section__legal--text.active {
+  height: 500px;
+}
+
+.mortgage-section__legal--text ol li, .mortgage-section__legal--text p {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+ol.lower-roman {
+  list-style-type: lower-roman;
+}
+
+/* legal ends*/
+/* adj-var starts*/
+.area-l2.section.mortgage-section__adj-var {
+  background: #eff5f3;
+}
+
+/* adj-var ends*/
+@media only screen and (min-width: 1160px) {
+  .mortgage-section__wpr {
+    max-width: 1160px;
+  }
+
+  .mortgage-section-wpr__intro {
+    max-width: 720px;
+  }
+
+  /* Feature section start*/
+  .mortgage-section__feature--container {
+    width: 720px;
+    margin: 65px auto 0 auto;
+  }
+
+  .mortgage-section__feature--col {
+    width: 240px;
+    min-height: 180px;
+    float: left;
+  }
+
+  .mortgage-section__feature--col h6 {
+    margin: 30px auto 0 auto;
+    border-bottom: 1px solid #dde4e6;
+    max-width: 175px;
+    text-align: center;
+  }
+
+  .mortgage-section__feature--col span {
+    display: inline-block;
+    height: 87px;
+    line-height: 87px;
+  }
+
+  .mortgage-section__feature--col p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .u-border-r-grey {
+    border-right: 1px solid #c1cbd0;
+  }
+
+  .mortgage-section__wpr--heading h3 {
+    margin-bottom: 60px;
+  }
+
+  .mortgage-section__wpr--heading p {
+    vertical-align: middle;
+  }
+
+  .mortgage-section__feature--btn {
+    max-width: 240px;
+    margin: 75px auto 0px auto;
+  }
+
+  /* Feature section end*/
+  /* tips starts*/
+  .mortgage-section__tips--wpr {
+    width: 690px;
+    margin: 90px auto 80px auto;
+    position: relative;
+  }
+
+  /* tips ends*/
+  /* more starts*/
+  .mortgage-section-wpr__more {
+    max-width: 840px;
+    margin: auto;
+  }
+
+  .mortgage-section-wpr__more--excerpt {
+    margin: 15px 0 10px 0;
+  }
+
+  .mortgage-section-wpr__more--image {
+    margin-bottom: 30px;
+  }
+
+  .mortgage-section-wpr__more--tile {
+    width: 375px;
+    margin-right: 75px;
+    margin-top: 80px;
+    float: left;
+  }
+
+  .mortgage-section-wpr__more--tile:last-child {
+    margin-right: 0;
+  }
+
+  /* more ends*/
+  /* contact starts*/
+  .mortgage-section__contact--container {
+    width: 960px;
+  }
+
+  /* contact ends*/
+  /* legal starts*/
+  .mortgage-section__legal--container {
+    width: 960px;
+    margin: auto;
+  }
+
+  .mortgage-section__legal--text {
+    margin-top: 80px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .mortgage-section__legal--text ol li, .mortgage-section__legal--text p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  /* legal ends*/
+}
+/*
+    rates
+*/
+.mortgage-section__adj-var--container h3 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mortgage-section__adj-var--container {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .mortgage-section__adj-var--col1 {
+    width: 740px;
+    float: left;
+    border-right: 1px solid #c1cbd0;
+    padding-right: 50px;
+  }
+
+  .mortgage-section__adj-var--col2 {
+    width: 460px;
+    float: left;
+    padding-left: 40px;
+  }
+
+  .mortgage-section__adj-var--col50 {
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 30px;
+    border-right: 1px solid #c1cbd0;
+    max-width: 340px;
+  }
+
+  .mortgage-section__adj-var--col50:last-child {
+    padding-right: 0;
+    border-right: 0;
+    padding-left: 30px;
+  }
+
+  .mortgage-section__adj-var--col100 {
+    width: 100%;
+  }
+
+  .rates-number {
+    text-align: center;
+    max-width: 320px;
+    margin: auto;
+  }
+  .rates-number .number {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  .rates-number .period, .rates-number .desc {
+    border-top: 1px solid #c1cbd0;
+    padding: 7px 0;
+  }
+
+  .rate-intro-adj {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .rate-intro-var {
+    margin-top: 65px;
+    margin-bottom: 80px;
+  }
+
+  .mortgage-section__adj-var--col2 .rates-number {
+    margin-top: 38px;
+  }
+
+  .mortgage-section__fixed--container {
+    width: 1200px;
+    margin: 110px auto 0 auto;
+  }
+
+  .mortgage-section__fixed--container h4 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .mortgage-section__fixed--container p {
+    text-align: center;
+    margin: 0 auto 60px auto;
+    max-width: 600px;
+  }
+
+  .mortgage-section__fixed--row {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .mortgage-section__base--container {
+    width: 1200px;
+    margin: 110px auto 0 auto;
+    text-align: center;
+  }
+
+  .mortgage-section__base--container h4 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .mortgage-section__base--row {
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 0 auto 40px 0;
+  }
+}
+body[data-areaid=mortgage] .header.section, body[data-areaid=mortgage-rates] .header.section, body[data-areaid=mortgage-all-in-one] .header.section, body[data-areaid=mortgage-faq] .header.section {
+  position: static;
+}
+
+body.IGv2 .span-wrap span {
+  white-space: nowrap;
+}
+body.IGv2 .span-breaks span {
+  display: block;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .span-breaks span {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .span-breaks-small span {
+    display: block;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .span-breaks-medium span {
+    display: block;
+  }
+}
+body.IGv2 .outline-btn {
+  border-width: 2px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .outline-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+}
+body.IGv2 .outline-btn:hover {
+	background-color:#FFF;
+	color:#000;
+}
+body.IGv2 .wpr h2 {
+  text-transform: none;
+}
+body.IGv2 .wpr h3 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+body.IGv2 .wpr .footer2 h3 {
+  text-align: left;
+}
+body.IGv2 .legal-content p:last-child{padding-bottom:8em;}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 h3 {
+    margin-bottom: 3.3rem;
+  }
+  body.IGv2 .wpr h3 {
+  	margin-bottom: 2rem;
+  }
+  body.IGv2 .legal-content p:last-child{padding-bottom:2em;}
+}
+body.IGv2 [dynamic-rate]::before {
+  content: " \00A7 ";
+  animation: 2s linear 0s normal none infinite running spin;
+  display: inline-block;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-horizontal-divider {
+    margin-top: 10.2rem;
+  }
+  body.IGv2 .small-screen-horizontal-divider::before {
+    border-top: 2px solid #c1cbd0;
+    top: -5.2rem;
+    content: "";
+    left: 19%;
+    position: absolute;
+    width: 62%;
+  }
+}
+body.IGv2[data-areaId=mortgage-rates] .intro-l2.section .copy-wrap .sub {
+  width: 100%;
+}
+body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section .headline {
+  width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section .headline + .headline {
+    margin-top: 0;
+  }
+}
+body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section .copy-wrap {
+  top: 48%;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section + .area-l2.section {
+    padding-top: 6.6rem;
+    padding-bottom: 6rem;
+  }
+}
+body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section + .area-l2.section + .area-l2.section {
+  padding-top: 4.4rem;
+}
+body.IGv2[data-areaId=mortgage-all-in-one] .intro-l2.section + .area-l2.section + .area-l2.section .rate-grid-1 {
+  margin-top: 2.2rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2[data-areaId=mortgage-all-in-one] .area-l2.section {
+    padding-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2[data-areaId=mortgage-all-in-one] .area-l2.section + .area-l2.section {
+    padding-top: 2rem;
+  }
+  body.IGv2[data-areaId=mortgage-all-in-one] .area-l2.section + .area-l2.section.small-screen-horizontal-divider {
+    padding-top: 5.8rem;
+    margin-top: 0;
+  }
+  body.IGv2[data-areaId=mortgage-all-in-one] .area-l2.section + .area-l2.section.small-screen-horizontal-divider::before {
+    left: 10%;
+    margin-top: -5rem;
+    position: absolute;
+    width: 80%;
+    top: auto;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2[data-areaId=mortgage-faq] .area-l2.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  body.IGv2[data-areaId=mortgage-faq] .area-l2.section .row.separators > div.columns + div.columns {
+    margin-top: 7rem;
+  }
+  body.IGv2[data-areaId=mortgage-faq] .area-l2.section .row.separators > div.columns + div.columns::before {
+    top: -3.5rem;
+  }
+  body.IGv2[data-areaId=mortgage-faq] .area-l2.section .span-breaks span {
+    display: block;
+  }
+}
+body.IGv2 .intro-l2.section {
+  height: 49.3rem;
+  background-size: auto auto;
+  background-size: cover;
+  background-position: 47% 100%;
+  border-top: 1px solid #d5d6d6;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .intro-l2.section {
+    height: 30rem;
+    background-size: cover;
+    background-position: 39% 100%;
+  }
+}
+body.IGv2 .intro-l2.section .copy-wrap {
+  top: 38.5%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .intro-l2.section .copy-wrap {
+    top: 40%;
+  }
+}
+body.IGv2 .intro-l2.section .headline {
+  margin-bottom: 4.6rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .intro-l2.section .headline {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+}
+body.IGv2 .intro-l2.section .headline + .headline {
+  margin-top: -2rem;
+}
+body.IGv2 .intro-l2.section .sub {
+  font-size: 5rem;
+}
+body.IGv2 .intro-l2.section .sub p {
+  font-size: 0.3em;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .intro-l2.section .sub {
+    font-size: 2.1rem;
+  }
+  body.IGv2 .intro-l2.section .sub p {
+  font-size: 0.46em;
+}
+}
+body.IGv2 .intro-l2.section .morebtn {
+  bottom: 33px;
+  color:#222;
+}
+body.IGv2 .area-l2.section {
+  padding: 4.8rem 9.3% 7.2rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section {
+    padding-top: 6.8rem;
+  }
+  body.IGv2 .intro-l2.section .morebtn {
+  	bottom: 23px;
+	color:transparent;
+  }
+}
+body.IGv2 .area-l2.section:nth-of-type(even) {
+  background-color: #f1f7f7;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section {
+    text-align: center;
+    padding-bottom: 4.4em;
+    padding-bottom: 6.666em;
+  }
+}
+body.IGv2 .area-l2.section .row:not(.width-limited) {
+  max-width: none;
+}
+body.IGv2 .area-l2.section .row.width-limited-medium {
+  max-width: 75rem;
+}
+body.IGv2 .area-l2.section .row.separators > div.columns + div.columns::before {
+  border-left: 2px solid #c1cbd0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.separators > div.columns + div.columns::before {
+    border-top: 2px solid #c1cbd0;
+    border-left: none;
+    width: 100%;
+    height: auto;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid, body.IGv2 .area-l2.section .row.rate-grid-1, body.IGv2 .area-l2.section .row.rate-grid-2, body.IGv2 .area-l2.section .row.rate-grid-3, body.IGv2 .area-l2.section .row.rate-grid-4, body.IGv2 .area-l2.section .row.rate-grid-5 {
+  margin-top: 3.5rem;
+  display: flex;
+}
+body.IGv2 .area-l2.section .row.rate-grid.foundation-sizing, body.IGv2 .area-l2.section .row.foundation-sizing.rate-grid-1, body.IGv2 .area-l2.section .row.foundation-sizing.rate-grid-2, body.IGv2 .area-l2.section .row.foundation-sizing.rate-grid-3, body.IGv2 .area-l2.section .row.foundation-sizing.rate-grid-4, body.IGv2 .area-l2.section .row.foundation-sizing.rate-grid-5 {
+  max-width: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid, body.IGv2 .area-l2.section .row.rate-grid-1, body.IGv2 .area-l2.section .row.rate-grid-2, body.IGv2 .area-l2.section .row.rate-grid-3, body.IGv2 .area-l2.section .row.rate-grid-4, body.IGv2 .area-l2.section .row.rate-grid-5 {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns {
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns {
+    padding-bottom: 4.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns + div.columns, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns + div.columns, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns + div.columns, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns + div.columns, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns + div.columns, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns + div.columns {
+    padding-top: 5.3rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns + div.columns::before, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns + div.columns::before, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns + div.columns::before, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns + div.columns::before, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns + div.columns::before, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns + div.columns::before {
+    border-top: 2px solid #c1cbd0;
+    top: 1px;
+    content: "";
+    left: 19%;
+    position: absolute;
+    width: 62%;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns:last-child, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns:last-child, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns:last-child, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns:last-child, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns:last-child, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns:last-child {
+    padding-bottom: 0;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns + .columns::before {
+  border-left: 2px solid #c1cbd0;
+  left: 1px;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns + .columns::before, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns + .columns::before {
+    border-left: none;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p {
+  margin: 0 0 1.4rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p.tp_02a, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.tp_02a, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.tp_02a, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.tp_02a, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.tp_02a, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.tp_02a {
+    font-size: 3.6rem;
+    white-space: nowrap;
+    margin: 0;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p.subnote, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.subnote, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.subnote, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.subnote, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.subnote, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.subnote {
+  line-height: 3rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.subnote sup {
+  display: block;
+  position: relative;
+  top: 1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.subnote sup, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.subnote sup {
+    top: 0;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p {
+  padding-top: 1.8rem;
+  margin-bottom: -3px;
+  position: relative;
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p::before {
+  border-top: 1px solid #c1cbd0;
+  top: 0px;
+  content: "";
+  left: 11%;
+  position: absolute;
+  width: 78%;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p {
+    padding-top: 0;
+    font-size: 1.6rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p::before, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p::before {
+    border-top: none;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 820px) {
+	body.IGv2 .tp_07a.span-wrap {
+		font-size:1.5rem;	
+	}
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p + p {
+  padding-top: 2.1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p + p, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p + p {
+    padding-top: 0;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p + p:last-child, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p + p:last-child, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p + p:last-child, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p + p:last-child, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p + p:last-child, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p + p:last-child {
+  margin-bottom: 0;
+}
+body.IGv2 .area-l2.section .row.rate-grid > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.span-wrap span {
+  position: relative;
+  top: -1rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-1 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-2 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-3 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-4 > div.columns p.span-wrap span, body.IGv2 .area-l2.section .row.rate-grid-5 > div.columns p.span-wrap span {
+    top: 0;
+  }
+}
+body.IGv2 .area-l2.section .row .outline-btn {
+  margin-top: 7rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row .outline-btn {
+    margin-top: 5rem;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid-1 {
+  max-width: 24rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid-1 + [class*="rate-grid-"] {
+  margin-top: 3.8rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid-1 + [class*="rate-grid-"] {
+    margin-top: 7.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid-1 + [class*="rate-grid-"] > div:first-child::before {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 19%;
+    position: absolute;
+    top: -29px;
+    width: 62%;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid-2 {
+  max-width: 48rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid-2 + [class*="rate-grid-"] {
+  margin-top: 3.8rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid-2 + [class*="rate-grid-"] {
+    margin-top: 7.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid-2 + [class*="rate-grid-"] > div:first-child::before {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 19%;
+    position: absolute;
+    top: -29px;
+    width: 62%;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid-3 {
+  max-width: 72rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid-3 + [class*="rate-grid-"] {
+  margin-top: 3.8rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid-3 + [class*="rate-grid-"] {
+    margin-top: 7.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid-3 + [class*="rate-grid-"] > div:first-child::before {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 19%;
+    position: absolute;
+    top: -29px;
+    width: 62%;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid-4 {
+  max-width: 96rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid-4 + [class*="rate-grid-"] {
+  margin-top: 3.8rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid-4 + [class*="rate-grid-"] {
+    margin-top: 7.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid-4 + [class*="rate-grid-"] > div:first-child::before {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 19%;
+    position: absolute;
+    top: -29px;
+    width: 62%;
+  }
+}
+body.IGv2 .area-l2.section .row.rate-grid-5 {
+  max-width: 120rem;
+}
+body.IGv2 .area-l2.section .row.rate-grid-5 + [class*="rate-grid-"] {
+  margin-top: 3.8rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row.rate-grid-5 + [class*="rate-grid-"] {
+    margin-top: 7.4rem;
+  }
+  body.IGv2 .area-l2.section .row.rate-grid-5 + [class*="rate-grid-"] > div:first-child::before {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 19%;
+    position: absolute;
+    top: -29px;
+    width: 62%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .row .rate-grid-1 {
+    display: inline-block;
+  }
+}
+body.IGv2 .area-l2.section .row .rate-grid-1 > div.columns {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body.IGv2 .area-l2.section .row.rate-grid-2.rate-grid-wide {
+  max-width: 72rem;
+}
+body.IGv2 .area-l2.section .banner {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .banner {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+}
+body.IGv2 .area-l2.section .banner .header {
+  line-height: 3.6rem;
+  padding: 0;
+  display: block;
+}
+body.IGv2 .area-l2.section .banner .header .wrap {
+  margin-top: 0.3rem;
+  padding: 0;
+  left: -0.8rem;
+  position: relative;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  body.IGv2 .area-l2.section .banner .header .wrap {
+    left: -3rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .banner .header .wrap {
+    left: 0;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .banner .header .wrap .illustration {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .banner .header .wrap .illustration {
+    max-width: 14rem;
+    width: 53.5%;
+  }
+}
+body.IGv2 .area-l2.section .banner .header .wrap .illustration[data-illustrationid=HL--mortgage-rates] {
+  background-image: url("../images/L2-highlights/HL--mortgage-rates.png");
+}
+body.IGv2 .area-l2.section .banner .header .wrap .illustration[data-illustrationid=HL--mortgage-all-in-one] {
+  background-image: url("../images/L2-highlights/HL--mortgage-all-in-one.png");
+}
+body.IGv2 .area-l2.section .banner .header p {
+  font-family: "whitney_lightregular";
+  line-height: 4rem;
+  margin: 0;
+}
+@media only screen and (max-width: 959px) {
+  body.IGv2 .area-l2.section .banner .header p {
+    line-height: 2.6rem;
+  }
+}
+body.IGv2 .area-l2.section .banner .header h2 {
+  text-transform: none;
+  line-height: 7.2rem;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (max-width: 959px) {
+  body.IGv2 .area-l2.section .banner .header h2 {
+    line-height: 3.8rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section .banner .header h2 {
+    line-height: 3.4rem;
+    font-size: 2.4rem;
+    font-family: "whitney_bookregular";
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+}
+body.IGv2 .area-l2.section .outline-btn {
+  min-width: 0px;
+}
+body.IGv2 .area-l2.section .highlights {
+  display: flex;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .highlights {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+body.IGv2 .area-l2.section .highlights li {
+  padding-bottom: 42px;
+  position: relative;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .highlights li > * {
+    text-align: center;
+  }
+}
+body.IGv2 .area-l2.section .highlights li .underline-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .highlights li .underline-link {
+    position: static;
+    margin-top: .2em;
+  }
+}
+body.IGv2 .area-l2.section .highlights li + li .underline-link {
+  left: 1.33333rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .highlights li + li {
+    margin-top: 5.7rem;
+  }
+}
+body.IGv2 .area-l2.section .highlights li:last-child .underline-link {
+  left: 2.66667rem;
+}
+body.IGv2 .area-l2.section .highlights li .illustration {
+  margin: 1.5em auto 5.7em;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section .highlights li .illustration {
+    position: static;
+    width: 65%;
+    margin-bottom: 1.5em;
+  }
+}
+body.IGv2 .area-l2.section .highlights li .tp_03a {
+  font-size: 3.6rem;
+}
+body.IGv2 .area-l2.section .highlights li .header {
+  margin-bottom: 1.1em;
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr, body.IGv2 .area-l2.section.carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8em;
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row, body.IGv2 .area-l2.section.carousel .row {
+  max-width: 70rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row, body.IGv2 .area-l2.section.carousel .row {
+    position: relative;
+    top: 0.5rem;
+  }
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap {
+  margin-bottom: .7rem;
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap .carousel-prev, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap .carousel-prev {
+  left: -15%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap .carousel-prev, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap .carousel-prev {
+    top: 30%;
+  }
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap .carousel-next, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap .carousel-next {
+  right: -15%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap .carousel-next, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap .carousel-next {
+    top: 30%;
+  }
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap ul.slick-dots, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap ul.slick-dots {
+  width: auto;
+  margin-top: 6.5em;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap ul.slick-dots, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap ul.slick-dots {
+    margin-top: .8em;
+  }
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap ul.slick-dots li, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap ul.slick-dots li {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+body.IGv2 .area-l2.section.mortgage-section__tips--wpr .row .js-slick-wrap ul.slick-dots li button, body.IGv2 .area-l2.section.carousel .row .js-slick-wrap ul.slick-dots li button {
+  margin: 0 .6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+body.IGv2 .area-l2.section.contact {
+  padding-top: 3.6em;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.contact {
+    padding-top: 5.65em;
+  }
+}
+body.IGv2 .area-l2.section.contact .row + .row:not(:last-child) .columns {
+  padding: 0;
+}
+body.IGv2 .area-l2.section.contact .row p {
+  padding: 0 10% 5rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.contact .row p {
+    padding: 0 0 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+body.IGv2 .area-l2.section.contact .outline-btn {
+  margin-top: 0;
+}
+body.IGv2 .area-l2.section.reveal {
+  padding-top: 6rem;
+  padding-bottom: 0;
+  background: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.reveal {
+    padding-top: 2.2em;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body.IGv2 .area-l2.section.reveal {
+    padding-bottom: 0.6rem;
+  }
+}
+body.IGv2 .area-l2.section.reveal.active h3 {
+  display: none;
+}
+body.IGv2 .area-l2.section.reveal.active h3 + h3 {
+  display: block;
+}
+body.IGv2 .area-l2.section.reveal h3 {
+  cursor: pointer;
+}
+body.IGv2 .area-l2.section.reveal h3 + h3 {
+  display: none;
+}
+body.IGv2 .area-l2.section.reveal .reveal-content {
+  transition: height .5s ease 0s;
+  overflow: hidden;
+  text-align: left;
+}
+body.IGv2 .area-l2.section.reveal div.arrow {
+  margin-left: 1rem;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  top: -2px;
+  transform: rotate(-45deg);
+  width: 10px;
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+}
+body.IGv2 .area-l2.section.reveal div.arrow.inverse {
+  transform: rotate(135deg);
+  top: 2px;
+}
+body.IGv2 .area-l2.section.article-2-col {
+  background-color: #f1f7f7;
+  position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col {
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+    padding-bottom: 1.7rem;
+    margin-top: -7.2rem;
+    overflow: visible;
+  }
+  body.IGv2 .area-l2.section.article-2-col > div.row:last-child > div.columns:last-child::after {
+    border-top: 2px solid #c1cbd0;
+    content: "";
+    left: 0%;
+    position: absolute;
+    bottom: -5.2rem;
+    width: 100%;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col .rate-grid-5 {
+  max-width: 1200px;
+  display: flex;
+}
+@media only screen and (min-width: 0px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col .rate-grid-5 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col .rate-grid-5 {
+    display: none;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col .rate-grid-5 > div:not([aria-hidden=true]):first-child::before {
+  left: 0%;
+  top: -19px;
+  width: 100%;
+}
+body.IGv2 .area-l2.section.article-2-col .rate-grid-5 + .rate-grid-5 {
+  margin-top: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col .rate-grid-5 + .rate-grid-5 {
+    display: block;
+  }
+  body.IGv2 .area-l2.section.article-2-col .rate-grid-5 + .rate-grid-5 > div.columns {
+    width: 100%;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns {
+  padding: 2.2rem 0 0 0;
+}
+@media only screen and (min-width: 960px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .screen-reader-medium-up {
+    position: absolute;
+    left: -99999px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns {
+    margin-bottom: 5rem;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .tp_09a {
+  padding-top: 5.8rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .tp_09a {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .tp_09a {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns > .row {
+  margin: 0 0 0 3rem;
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns > .row {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns > .row {
+    margin: 0;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns .tp_09a {
+  padding-top: 1.2rem;
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns .tp_09a {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns .tp_09a {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns::before {
+    border: none;
+    content: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns::before {
+    left: 0%;
+    top: 8px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns + .columns {
+    margin-top: 4.2rem;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card {
+  height: 24.5rem;
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card {
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card {
+    height: auto;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card .columns {
+  bottom: 0;
+  position: absolute;
+  left: -4%;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card .columns {
+    width: 83.3333%;
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 959px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns .rate-card .columns {
+    left: 0;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row {
+  margin: 0 2.2rem 0 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row > .columns > .row {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row > .columns + .columns > .row {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row > .columns + .columns > .row::before {
+    border-left: 2px solid #c1cbd0;
+    top: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 100%;
+  }
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row > .columns + .columns > .row.rate-card .columns {
+    left: 0;
+  }
+}
+body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row:last-child:not(.rate-card) {
+  display: flex;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .area-l2.section.article-2-col > div.row.rate-grid-5 > .columns > .row:last-child:not(.rate-card) {
+    display: block;
+  }
+}
+body.IGv2 .areas.section {
+  padding-top: 13.5rem;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .areas.section {
+    padding-top: 6rem;
+  }
+}
+body.IGv2 .areas.section .accordion {
+  border: medium none;
+  box-shadow: none;
+  padding: 0 8.3%;
+  margin:0 auto;
+  margin-bottom:8em;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .areas.section .accordion {
+    padding: 0;
+  }
+}
+body.IGv2 .areas.section .accordion > li {
+  background-color: transparent;
+  border-bottom: 1px solid #c1cbd0;
+  padding: 0;
+}
+body.IGv2 .areas.section .accordion .line-item .label {
+  width: 100%;
+}
+body.IGv2 .areas.section .accordion .line-item .label .icon {
+  background: rgba(0, 0, 0, 0) url("/en/images/corp/svg/nav__icon--info.png") no-repeat scroll 100% center / 60px auto;
+  content: " ";
+    margin-right: 20px;
+    opacity: 1;
+    padding: 1rem 2.7rem;
+}
+body.IGv2 .areas.section .accordion .details p {
+  width: auto;
+}
+body.IGv2 .areas.section .accordion .details p:first-child {
+  margin-top: 0;
+}
+body.IGv2 .areas.section .accordion .details a,
+body.IGv2 .areas.section .accordion .details a span {
+  color: #008cba;
+}
+body.IGv2 .areas.section .accordion .details a:hover {
+  text-decoration: underline;
+}
+body.IGv2 .areas.section .accordion .details ul {
+  font-size: 2.2rem;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 4.8rem;
+  padding-left: 2rem;
+  margin-left: 0;
+  line-height: 0;
+}
+body.IGv2 .areas.section .accordion .details table {
+  margin: 0;
+  border:none;
+  background-color:transparent;
+  border-top: 2px solid rgba(0,0,0,0.15);
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+body.IGv2 .areas.section .accordion .details table thead {
+  background-color:transparent;
+}
+body.IGv2 .areas.section .accordion .details table thead th {
+  background-color:transparent;
+  font-family: "whitney_scmedium";
+  font-size:1.6rem;
+  text-transform:lowercase;
+}
+body.IGv2 .areas.section .accordion .details table tr.even, table tr.alt, table tr:nth-of-type(2n) {
+	background-color:transparent;
+}
+body.IGv2 .areas.section .accordion .details table tbody tr:nth-child(odd) {
+	/*background-color:rgba(0,0,0,0.15);*/
+}
+body.IGv2 .areas.section .accordion .details .scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 4.8rem;
+}
+body.IGv2 .legal-content ol {
+  margin-bottom: 1.25rem;
+  font-family: "whitney_bookregular";
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.6;
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  color:#646464;
+}
+body.IGv2 .legal-content ol + ol {
+  clear: both;
+}
+body.IGv2 .legal-content ol li {
+  counter-increment: custom;
+}
+body.IGv2 .legal-content ol li::before {
+  content: counter(custom) " ";
+  display: block;
+  float: left;
+  margin-right: 0.5rem;
+    font-size: 0.9em;
+    line-height: 1;
+    position: relative;
+}
+body.IGv2 .legal-content ol li:first-child {
+  counter-reset: custom;
+}
+body.IGv2 .legal-content ol.lower-roman {
+  font-weight: 700;
+  margin-left: -1.4rem;
+  font-family: "whitney_semiboldregular";
+  font-size: 1.4rem;
+  color:#646464;
+}
+body.IGv2 .legal-content ol.lower-roman li {
+  float: left;
+  margin-left: 1.4rem;
+}
+body.IGv2 .legal-content ol.lower-roman li::before {
+  content: counter(custom,lower-roman) " ";
+  display: inline-block;
+    font-size: 0.9em;
+    line-height: 1;
+    position: relative;
+}
+body.IGv2 .legal-content ol.lower-roman li::after {
+  content: ",";
+}
+body.IGv2 .legal-content ol.lower-roman li:last-child::after {
+  content: "";
+}
+body.IGv2 .legal-content p {
+	font-size:1.4rem;
+	color:#646464;	
+}
+body.IGv2 .no-section-stripe {
+  background-color: #fff !important;
+}
+body.IGv2 .odd-section-stripe {
+  background-color: #faf7e6 !important;
+}
+body.IGv2 .even-section-stripe {
+  background-color: #f1f7f7 !important;
+}
+body.IGv2 .bottom-gutter-extra-small {
+  padding-bottom: 1rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-bottom-gutter-extra-small {
+    padding-bottom: 1rem !important;
+  }
+}
+body.IGv2 .bottom-gutter-small {
+  padding-bottom: 2rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-bottom-gutter-small {
+    padding-bottom: 2rem !important;
+  }
+}
+body.IGv2 .bottom-gutter-medium {
+  padding-bottom: 3.7rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-bottom-gutter-medium {
+    padding-bottom: 3.7rem !important;
+  }
+}
+body.IGv2 .bottom-gutter-large {
+  padding-bottom: 6.7rem !important;
+}
+body.IGv2 .bottom-gutter-extra-large {
+  padding-bottom: 8rem !important;
+}
+body.IGv2 .top-gutter-extra-small {
+  padding-top: 1rem !important;
+}
+body.IGv2 .top-gutter-small {
+  padding-top: 2rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-top-gutter-small {
+    padding-top: 2rem !important;
+  }
+}
+body.IGv2 .top-gutter-medium {
+  padding-top: 3.7rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .small-screen-top-gutter-medium {
+    padding-top: 3.7rem !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .no-small-screen-bottom-gutter {
+    padding-bottom: 0rem !important;
+  }
+}
+body.IGv2 .no-top-gutter {
+  padding-top: 0 !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .no-small-screen-top-gutter {
+    padding-top: 0rem !important;
+  }
+}
+body.IGv2 .no-bottom-margin {
+  margin-bottom: 0rem !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  body.IGv2 .no-small-screen-bottom-margin {
+    margin-bottom: 0rem !important;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.IGv2 .header-wrap .main-menu > li.findAdvisor:not(.has-form) > a:not(.button) {background-color:#282828;border-color:#282828;color:#fff;}
+.IGv2 .header-wrap .main-menu > li.findAdvisor:not(.has-form) > a:hover:not(.button) {background-color:#FFF;border-color:#282828;color:#282828;}
+.IGv2 .outline-btn::before, .IGv2 .outline-btn::after {transition:none;}
+.IGv2 .outline-btn::after {background-color:#FFF;}
+
+/*# sourceMappingURL=mortgage.css.map */

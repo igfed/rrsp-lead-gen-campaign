@@ -1,0 +1,36 @@
+$areas: retirement estate-planning insurance investments mortgage tax-planning;
+
+// use this property to define when the modal takes over the whole screen,
+// rather than just floating over the records
+$modal-fullscreen-takeover-threshold-min: 481px;
+
+@media only screen and (max-width: $modal-fullscreen-takeover-threshold-min - 1) {
+	body.rrsp-modal-open {
+		overflow: hidden;
+	}
+}
+
+.area-l2.section.records {
+	position: relative;
+
+	.records-container {
+		position: relative;
+		overflow: visible;
+		max-width: 1200px;
+    	margin: 0 auto;
+	}
+
+}
+
+ @media only screen and (min-width: 769px) and (max-width: 1150px) {
+	.area-l2.section.records {
+		    padding: 5.65em 8.2% 26.65em 8.2%;
+	}
+}
+
+@import 'rrsp_records';
+@import 'rrsp_modal';
+@import 'rrsp_cta';
+
+@import 'rrsp_video';
+@import 'rrsp_home';

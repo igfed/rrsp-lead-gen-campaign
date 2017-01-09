@@ -1,0 +1,198 @@
+
+$black: #0c273c;
+$white: #ffffff;
+$lightblue: #97c4d0;
+$darkblue: #0c273c;
+$offwhite: #eff5f3;
+$beige: #faf7e6;
+$middlegreen: #0ed59a;
+$lightgrey: #e3eaea;
+$disabledgrey: #a6a6a4;
+$middlegrey: #f1f7f7;
+$threedgrey: #818c91;
+
+@mixin hide-text {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+@mixin aspect-ratio($width, $height, $contentSelector) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> #{unquote($contentSelector)} {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+$W_L: 'whitney_lightregular';
+$W_BK: 'whitney_bookregular';
+$W_BK_SC: 'whitney_bookscregular';
+$W_M: "whitney_medium";
+$W_M_SC: 'whitney_scmedium';
+$W_SB: 'whitney_semiboldregular';
+
+@mixin setFont($fontFam) {
+
+    font-style: normal;
+    font-family: $fontFam;
+
+   /* @if $fontFam == $W_L {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 300;
+    } @else if $fontFam == $W_BK {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 400;
+    } @else if $fontFam == $W_M {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 500;
+    } @else if $fontFam == $W_SB {
+        font-family: 'Whitney A', 'Whitney B';
+        font-weight: 600;
+    } @else if $fontFam == $W_BK_SC {
+        font-family: 'Whitney SC A', 'Whitney SC B';
+        font-weight: 400;
+    } @else if $fontFam == $W_M_SC {
+        font-family: 'Whitney SC A', 'Whitney SC B';
+        font-weight: 500;
+    }*/
+}
+
+$imgs: '../images';
+$hlImgs: '../images/L2-highlights';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    @include setFont($W_BK);
+	&.locked {
+		overflow:hidden;
+	}
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+.wrp {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+sup {
+    font-size: .5em;
+    display: inline-block;
+    line-height: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    //padding: 15px 120px;
+    padding: 15px 8.2%;
+    overflow: hidden;
+
+    @include bp-mobile {
+        padding: 9vmin;
+    }
+}
+
+h2,
+h3 {
+    .nowrap {
+        white-space: nowrap;
+    }
+}
+
+h2 {
+    @include setFont($W_M_SC);
+    font-size: 1.9rem;
+    text-transform: lowercase;
+
+    @include bp-mobile {
+        font-size: 1.3rem;
+    };
+}
+
+h3 {
+
+    @include setFont($W_BK_SC);
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    padding: 0 0 0.3em;
+
+    @include bp-mobile {
+        font-size: 1.45rem;
+        line-height: 0.95;
+        margin-bottom: 0.9em;
+    };
+}
+
+.accel {
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+// foundation override defaults
+
+.label {
+    background: transparent;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+button,
+.button {
+
+    padding: 0;
+    margin: 0;
+    background: transparent;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+}
+
+
+.progress {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// print
+@media print {
+	.wpr {
+		display:none;
+	}
+}

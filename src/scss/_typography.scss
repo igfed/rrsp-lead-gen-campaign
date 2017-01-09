@@ -1,0 +1,426 @@
+$WL: 'whitney_lightregular';
+$WBK: 'whitney_bookregular';
+$WBKSC: 'whitney_bookscregular';
+$WM: "whitney_medium";
+$WMSC: 'whitney_scmedium';
+$WSB: 'whitney_semiboldregular';
+
+$igBlack: '#0D263C';
+$igGreen: '#0ed59a';
+$igGrey: '#f3f4f5';
+$igBlue: '#0c273a';
+
+.underline-link {
+	cursor: pointer;
+    display: inline-block;
+    line-height: 1.3;
+    position: relative;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 500;
+    font-family: $WMSC;
+    font-size:1.6rem;
+    color:$igBlack;
+}
+
+.underline-link:before{
+	display: block;
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: calc(100% - 20px);
+    height: 2px;
+    top: 100%;
+    background-color: #0ed59a;
+    -webkit-transition: right .15s ease-out .15s, left .15s ease-out 0s;
+    transition: right .15s ease-out .15s, left .15s ease-out 0s;
+}
+
+.underline-link--hover:before, .areas-nav.section li a:hover span:before, .report-modal .areas-nav.container li a:hover span:before, .underline-link:hover:before, .footer .footer--links-a .internal-links li a:hover:before {
+    left: calc(100% - 20px);
+    right: 0;
+    -webkit-transition: right .15s ease-out .15s, left .15s ease-out .3s;
+    transition: right .15s ease-out .15s, left .15s ease-out .3s;
+}
+
+.ux-font--hero-title,.tp_01a {
+	font-family: $WL;
+    font-size:2.8rem;
+    line-height:3.8rem;
+    color:$igBlack;
+} 
+
+.ux-font--callout-title-black,.tp_02a {
+    font-family: $WL;
+    font-size:2.8rem;
+    line-height:3.8rem;
+    color:$igBlack;
+} 
+
+.ux-font--callout-title-green,.tp_02a-g {
+    font-family: $WL;
+    font-size:2.8rem;
+    line-height:3.8rem;
+    color:igGreen;
+} 
+
+.ux-font--content-title,.tp_03a {
+    font-family: $WBK;
+    font-size:2.4rem;
+    line-height:3.4rem;
+    color:$igBlack;
+} 
+
+.ux-font--accordian-menu-section-title,.tp_04a {
+    font-family: $WMSC;
+    font-size:1.8rem;
+    line-height:2.8rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--section-title,.tp_05a {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--sub-section-title,.tp_06a {
+    font-family: $WBKSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.tp_06w {
+    font-family: $WBKSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:white;
+    text-transform: lowercase;
+} 
+
+.ux-font--callout-body-copy,.tp_07a {
+    font-family: $WL;
+    font-size:2.2rem;
+    line-height:3.2rem;
+    color:$igBlack;
+} 
+
+.ux-font--large-body-copy,.tp_08a {
+    font-family: $WBK;
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:$igBlack;
+} 
+
+.ux-font--body-copy,.tp_09a {
+    font-family: $WBK;
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:$igBlack;
+} 
+
+.ux-font--body-copy-small,.tp_09b {
+    font-family: $WBK;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+} 
+
+.ux-font--feature-body-copy,.tp_10a {
+    font-family: $WMSC;
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--number-callout,.tp_11a {
+    font-family: $WMSC;
+    font-size:9.0rem;
+    line-height:10.0rem;
+    color:$igBlack;
+    text-transform: lowercase;
+    text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+} 
+
+.ux-font--primary-button,.tp_20a {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--secondary-cta,.tp_21a {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--hyperlink,.tp_22a {
+    font-family: $WSB;
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:$igBlack;
+} 
+
+label,.ux-font--label,.tp_23a {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.tp_23w {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:white;
+    text-transform: lowercase;
+}
+
+select,input,.ux-font--input,.tp_24a {
+    font-family: $WMSC;
+    font-size:1.4rem;
+    line-height:2.4rem;
+    color:#666666;
+    text-transform: lowercase;
+} 
+
+.ux-font--radio-button,.tp_25a {
+    font-family: $WMSC;
+    font-size:1.6rem;
+    line-height:2.6rem;
+    color:$igBlack;
+    text-transform: lowercase;
+} 
+
+.ux-font--steps,.tp_26a {
+    font-family: $WBK;
+    font-size:1.8rem;
+    line-height:2.8rem;
+    color:#A6A6A6;
+} 
+
+.ux-footer,.tp_27a {
+    font-family: $WBK;
+    font-size:1.2rem;
+    line-height:2.2rem;
+    color:$igBlack;
+} 
+
+.tp_28a {
+    font-family: $WL;
+    font-size:2.2rem;
+    line-height:3.2rem;
+    color:$igBlack;
+} 
+/*@media only print, only screen and (min-width: 768px) {
+.ux-font--hero-title,.tp_01a {
+	    font-size:4.0rem;
+	} 
+
+	.ux-font--callout-title-black,.tp_02a {
+	    font-size:2.4rem;
+	} 
+
+	.ux-font--callout-title-green,.tp_02a-g {
+	    font-size:2.4rem;
+	} 
+
+	.ux-font--content-title,.tp_03a {
+	    font-size:2.0rem;
+	} 
+
+	.ux-font--accordian-menu-section-title,.tp_04a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--section-title,.tp_05a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--sub-section-title,.tp_06a {
+	    font-size:1.8rem;
+	} 
+
+	.tp_06w {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--callout-body-copy,.tp_07a {
+	    font-size:2.2rem;
+	} 
+
+	.ux-font--large-body-copy,.tp_08a {
+	    font-size:2.8rem;
+	} 
+
+	.ux-font--body-copy,.tp_09a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--feature-body-copy,.tp_10a {
+	    font-size:2.2rem;
+	} 
+
+	.ux-font--number-callout,.tp_11a {
+	    font-size:9.0rem;
+	    text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+	} 
+
+	.ux-font--primary-button,.tp_20a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--secondary-cta,.tp_21a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--hyperlink,.tp_22a {
+	    font-size:1.8rem;
+	} 
+
+	label,.ux-font--label,.tp_23a {
+	    font-size:1.6rem;
+	} 
+
+	select,input,.ux-font--input,.tp_24a {
+	    font-size:1.6rem;
+	} 
+
+	.ux-font--radio-button,.tp_25a {
+	    font-size:1.8rem;
+	} 
+
+	.ux-font--steps,.tp_26a {
+	    font-size:3.6rem;
+	} 
+} */
+
+@media only screen and (min-width: 960px) {
+   	.ux-font--hero-title,.tp_01a {
+	    font-size:7.2rem;
+	    line-height:8.2rem;
+	} 
+
+	.ux-font--callout-title-black,.tp_02a {
+	    font-size:5.2rem;
+	    line-height:6.2rem;
+	} 
+
+	.ux-font--callout-title-green,.tp_02a-g {
+	    font-size:5.2rem;
+	    line-height:6.2rem;
+	} 
+
+	.ux-font--content-title,.tp_03a {
+	    font-size:3.6rem;
+	    line-height:4.6rem;
+	} 
+
+	.ux-font--accordian-menu-section-title,.tp_04a {
+	    font-size:2.4rem;
+	    line-height:3.4rem;
+	} 
+
+	.ux-font--section-title,.tp_05a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--sub-section-title,.tp_06a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.tp_06w {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--callout-body-copy,.tp_07a {
+	    font-size:2.2rem;
+	    line-height:3.2rem;
+	} 
+
+	.ux-font--large-body-copy,.tp_08a {
+	    font-size:2.8rem;
+	    line-height:3.8rem;
+	} 
+
+	.ux-font--body-copy,.tp_09a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--feature-body-copy,.tp_10a {
+	    font-size:2.2rem;
+	    line-height:3.2rem;
+	} 
+
+	.ux-font--number-callout,.tp_11a {
+	    font-size:14.5rem;
+	    line-height:15.5rem;
+	    text-shadow: 1px 1px #818c91,2px 2px #818c91,3px 3px #818c91,4px 4px #818c91,5px 5px #818c91,6px 6px #818c91;
+	} 
+
+	.ux-font--primary-button,.tp_20a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--secondary-cta,.tp_21a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--hyperlink,.tp_22a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	label,.ux-font--label,.tp_23a {
+	    font-size:1.6rem;
+	    line-height:2.6rem;
+	} 
+
+	select,input,.ux-font--input,.tp_24a {
+	    font-size:1.6rem;
+	    line-height:2.6rem;
+	} 
+
+	.ux-font--radio-button,.tp_25a {
+	    font-size:1.8rem;
+	    line-height:2.8rem;
+	} 
+
+	.ux-font--steps,.tp_26a {
+	    font-size:3.6rem;
+	    line-height:4.6rem;
+	}
+
+	.ux-footer,.tp_27a {
+	    font-size:1.4rem;
+	    line-height:2.4rem;
+	} 
+
+	.accordian-report {
+		padding-bottom: 70px;
+		border-bottom: solid 1px $igGrey;
+		width:960px;
+		margin: auto;
+	}
+	.tp_28a {
+	    font-size:2.8rem;
+	    line-height:3.8rem;
+	} 
+}

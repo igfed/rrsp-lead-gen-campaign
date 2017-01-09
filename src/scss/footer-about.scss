@@ -1,0 +1,85 @@
+.footer-about {
+	background: $offwhite;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	display: table;
+
+	.container {
+		display:table-cell;
+		color: $darkblue;
+		width:33%;
+		vertical-align:top;
+		position: relative;
+    	padding-bottom: 50px;
+
+		&:nth-child(2) {
+			//margin:0 4%;
+		}
+
+		h1 {
+			color: $darkblue;
+			@include setFont($W_BK);
+			font-size:3rem;
+		}
+
+		p {
+			color: $darkblue;
+			@include setFont($W_BK);
+			font-size:2.0rem;
+			width: 70%;
+		}
+
+		.cta {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	@include bp-mobile {
+
+		padding-top: 3.5em;
+		padding-bottom: 5em;
+
+		.container {
+			display: block;
+			width: 100%;
+		    margin-bottom: 2.3em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			h1 {
+				font-size: 2.8rem;
+			}
+
+			p {
+				width: 100%;
+			    font-size: 1.45rem;
+			    line-height: 1.3;
+			    padding-right: 4em;
+			    margin-bottom: 0;
+			}
+
+			.cta {
+				margin-top: 1em;
+			    font-size: 1.4rem;
+			}
+		}
+	}
+
+	@include bp-tablet-sm {
+		.container {
+			h1 {
+				font-size: 2.5rem;
+			}
+
+			p {
+				width: 80%;
+				font-size: 1.6rem;
+			}
+		}
+
+	};
+}

@@ -1,0 +1,386 @@
+.report-modal {
+	position:fixed;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	box-sizing:content-box;
+	top:0;
+	left:0;
+	z-index:100;
+
+
+	.screen {
+		position:absolute;
+		width:100%;
+		height:100%;
+		background: $white;
+		opacity:0.75;
+	}
+
+	.container {
+		@extend .section;
+		width:100%;
+		height:100%;
+		position:absolute;
+		overflow-y:scroll;
+		box-sizing:content-box;
+		padding:0;
+		margin:0;
+
+		.modal {
+			margin: 15px 5%;
+			padding: 40px 8%;
+			position:relative;
+			background: $beige;
+			width:90%;
+
+			.logo {
+				img {
+					width:141px;
+					height:41px;
+				}
+				h3 {
+					@include setFont( $W_BK);
+					font-size:1.4rem;
+					text-transform:none;
+				}
+			}
+
+			h2 {
+				display:inline-block;
+				vertical-align:top;
+			}
+
+			h1 {
+				line-height:1.2;
+				font-size:60px;
+				@include setFont($W_L);
+
+				//margin-bottom:35px;
+			}
+
+			.button-close-icon {
+				position:absolute;
+				top:40px;
+				right:8%;
+			}
+
+			.copy {
+				width:75%;
+				@include setFont($W_L);
+				color:$darkblue;
+				font-size:36px;
+				line-height:40px;
+				margin-bottom:5%;
+			}
+
+			.count {
+				margin-top:125px;
+				margin-bottom:50px;
+				vertical-align:top;
+				text-align:center;
+				display:inline-block;
+				width:100%;
+				height:100%;
+				.opportunity-score {
+					color:$darkblue;
+					line-height:1;
+					display:block;
+					font-size:145px;
+					@include setFont($W_M);
+				}
+				.lbl {
+					color:$darkblue;
+					display:block;
+					text-transform:lowercase;
+					font-size:22px;
+					@include setFont($W_M_SC);
+				}
+			}
+
+			.area-icons {
+				margin-bottom: 50px;
+				display:inline-block;
+				width:100%;
+				text-align:center;
+
+				.icon-group {
+					@include setFont($W_M_SC);
+					font-size:20px;
+					color:$darkblue;
+					display:inline-block;
+					text-transform:lowercase;
+					text-align:center;
+					margin:0 2% 0;
+					width:110px;
+					vertical-align:top;
+
+					> * {
+						margin-left:auto;
+						margin-right:auto;
+					}
+					.icon {
+						text-align:center;
+						width:95px;
+						height:95px;
+						border-radius:50%;
+						display:block;
+						border:none;
+						overflow:hidden;
+
+						img {
+							width: 95px;
+							height:95px;
+							padding:0;
+							margin:0;
+						}
+
+					}
+					.lbl {
+						line-height:1;
+						text-align:center;
+						display:inline-block;
+					}
+				}
+			}
+
+			.tips {
+				width:100%;
+
+				.header {
+					height:auto;
+					position:relative;
+					padding:0;
+					margin:0;
+					text-align:left;
+					color:$darkblue;
+					font-size:16px;
+					@include setFont($W_BK_SC);
+					text-transform:lowercase;
+					width:100%;
+					border-style:solid;
+					border-width:2px;
+					border-top:none;
+					border-left:none;
+					border-right:none;
+					border-color:$darkblue;
+					margin-bottom:40px;
+				}
+
+				.tip-holder {
+					width:100%;
+					display:table;
+					table-layout:fixed;
+					vertical-align:top;
+					padding-bottom:90px;
+					.tip {
+						padding-right:45px;
+						display:table-cell;
+						color:$darkblue;
+						@include setFont($W_BK);
+						font-size:20px;
+					}
+				}
+
+
+			}
+
+			.report-footer {
+				> * {
+					vertical-align:middle;
+				}
+				width:100%;
+				padding-top:40px;
+				position:relative;
+				display:inline-block;
+
+				border:transparent;
+				border-top:#bfc3bf;
+				border-style:solid;
+				border-width:1px;
+				.outline-btn {
+					width:auto;
+					float:left;
+					padding: calc(8px - 0.3em) 25px 8px 25px;
+
+				}
+				.underline-link {
+					margin: 6px 0 0 3%;
+					&.close {
+						float:right;
+						margin: 6px 3% 0 0;
+					}
+				}
+			}
+
+
+		}
+	}
+
+	@include bp-mobile {
+
+		.container {
+			.modal {
+				.area-icons {
+					.icon-group {
+						.icon {
+							width:60px;
+							height:60px;
+							img {
+								width:60px;
+								height:60px;
+							}
+						}
+						.lbl {
+							font-size:1.5rem;
+						}
+					}
+				}
+				.count {
+					margin-top:25px;
+					margin-bottom:30px;
+					.opportunity-score {
+						font-size:9rem;
+					}
+					.lbl {
+						font-size: 1.1rem;
+					}
+				}
+
+				h1 {
+					font-size: 30px;
+				}
+				.copy {
+					font-size: 20px;
+					line-height: 24px;
+					margin-bottom:20px;
+				}
+				.tips {
+					.header {
+						font-size: 12px;
+						margin-bottom:20px;
+					}
+					.tip-holder {
+						padding-bottom:20px;
+						.tip {
+							padding-right:0;
+							display: block;
+							margin-bottom:20px;
+							font-size:16px;
+						}
+					}
+				}
+				.report-footer {
+					padding-top:20px;
+					.outline-btn {
+						float: none;
+						font-size: 1.5rem;
+						width: 100%;
+						margin-bottom:10px;
+					}
+					.underline-link {
+						display:block;
+						float:left;
+						margin: 6px 0 0 3%;
+						float:none;
+						&.close {
+							display:block;
+							float:none;
+							margin: 6px 0 0 3%;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media print {
+
+	@page {
+		size:auto;
+		margin: 5mm 10mm 5mm 10mm;
+	}
+
+	.report-modal {
+		background-color:white;
+		height:100%;
+		width:100%;
+		padding:0;
+		margin:0;
+		position:relative;
+
+		.screen {
+			display:none;
+		}
+
+		.container {
+			margin:0;
+			padding:0;
+			overflow:visible;
+
+			.modal {
+				margin:0;
+				padding:0;
+
+				.button-close-icon {
+					display:none;
+				}
+
+				.area-icons {
+					.icon-group {
+						.icon {
+							width:60px;
+							height:60px;
+							img {
+								width:60px;
+								height:60px;
+							}
+						}
+						.lbl {
+							font-size:1.5rem;
+						}
+					}
+				}
+				.count {
+					margin-top:25px;
+					margin-bottom:30px;
+					.opportunity-score {
+						font-size:60pt;
+					}
+					.lbl {
+						font-size: 10pt
+					}
+				}
+
+				h1 {
+					font-size: 30pt;
+				}
+				.copy {
+					width:100%;
+					font-size: 20pt;
+					line-height: 24pt;
+					margin-bottom:20px;
+				}
+				.tips {
+					.header {
+						font-size: 12pt;
+						margin-bottom:16px;
+					}
+					.tip-holder {
+						padding-bottom:20px;
+						.tip {
+							font-size:11pt;
+						}
+					}
+				}
+				.report-footer {
+					display:none;
+				}
+			}
+		}
+	}
+}

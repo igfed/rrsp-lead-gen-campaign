@@ -1,0 +1,175 @@
+.intro-l2.section {
+
+  height: 600px;
+  //height: 50%;
+  //height: 50vh;
+  //min-height:600px;
+  //max-height: 700px;
+  background-color: #a5b7da;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+
+  @include bp-mobile {
+    height: 100vh;
+    min-height: 0;
+    max-height: 480px;
+  }
+
+  &[data-illustrationId=L2--investment],
+  &[data-illustrationId=L2--investments]{
+    background-image: url(#{$imgs}/L2-highlights/HL--investments.jpg);
+    background-position: 90% 100%;
+  }
+
+  // 2016-01-19 - start altering the retirement page to highlight RRSP stuff
+  &[data-illustrationId=L2--retirement] {
+    background-image: url(#{$imgs}/intro-bg-1-bg.jpg);
+    background-repeat: repeat-x;
+    background-size: auto;
+  }
+
+  &[data-illustrationId=L2--mortgage] {
+    background-image: url(#{$imgs}/L2-highlights/HL--mortgage.jpg);
+    background-position: 32% 100%;
+  }
+  &[data-illustrationId=L2--estate-planning] {
+    background-image: url(#{$imgs}/L2-highlights/HL--estate-planning.jpg);
+    background-position: 100% 100%;
+  }
+  &[data-illustrationId=L2--tax-planning] {
+    background-image: url(#{$imgs}/L2-highlights/HL--tax-planning.jpg);
+  }
+  &[data-illustrationId=L2--insurance] {
+    background-image: url(#{$imgs}/L2-highlights/HL--insurance.jpg);
+    background-position: 40% 100%;
+  }
+
+  .copy-wrap {
+    text-align: center;
+    top: 45%;
+    position: relative;
+    transform: translateY(-50%);
+
+    .headline {
+      display: inline-block;
+      width: 65%;
+      @include setFont($W_L);
+      font-size: 7.2rem;
+      line-height: 1.1;
+    }
+    .sub {
+      display: inline-block;
+      width: 65%;
+      @include setFont($W_L);
+      font-size: 6rem;
+      line-height: 1;
+    }
+  }
+  .backbtn {
+    cursor: pointer;
+    width: auto;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    padding: calc(6px - 0.1em) 19px 6px 13px;
+    color: $white;
+
+    background: $darkblue;
+    border: 3px solid $darkblue;
+    z-index: 1;
+
+    &:before,
+    &:after {
+      background: $darkblue;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    > * {
+      vertical-align: middle;
+    }
+
+    .line-arrow {
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      border-width: 3px;
+      border-color: #ffffff;
+
+      .ie9 & {
+        margin-top: -4px;
+      }
+
+    }
+  }
+
+  @include bp-tablet-sm {
+    .backbtn {
+      font-size: 1.5rem;
+      border-width: 1px;
+      border-radius: 3px;
+
+      .line-arrow {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+      }
+    }
+
+    .copy-wrap {
+
+      .headline {
+        font-size: 5rem;
+        line-height: 1.1;
+      }
+      .sub {
+        font-size: 3.5rem;
+
+      }
+    }
+  }
+
+  @include bp-mobile {
+
+    .backbtn {
+      position: relative;
+      transform: translate(-6vmin, 3.5em);
+      top: 0;
+      font-size: 1.5rem;
+      border-width: 1px;
+      border-radius: 3px;
+      padding: 1px 8px 3px;
+      line-height: 1.2;
+      margin-top: calc(30px + 5%);
+
+      .line-arrow {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+      }
+    }
+
+    .copy-wrap {
+
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .headline {
+        font-size: 3.6rem;
+      }
+      .sub {
+        font-size: 2.6rem;
+        line-height: 1.2;
+      }
+    }
+  }
+;
+}

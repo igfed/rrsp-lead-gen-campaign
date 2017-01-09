@@ -1,0 +1,95 @@
+.area-l2.section.records {
+
+	.records-list {
+		display: block;
+		margin: 0 auto;
+		max-width: 1200px;
+		font-size: 0;
+		text-align: center;
+		.record-item {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			opacity: 0.65;
+			&:before {
+				content: '';
+				display: block;
+				padding-top: 100%;
+			}
+
+			width: 50%;
+
+			@media only screen and (min-width: 769px) {
+				width: 33%;
+			}
+
+			> .modal-content {
+				display: none;
+			}
+
+			> .record-item-inner {
+				box-sizing: border-box;
+				margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-color: transparent;
+				text-indent: 999em;
+				color: transparent;
+
+				@each $area in $areas {
+					&.#{$area} {
+						[data-lang="en"] & {
+							background-image: url(#{$imgs}/rrsp/en_#{$area}_370.jpg);
+						}
+						[data-lang="fr"] & {
+							background-image: url(#{$imgs}/rrsp/fr_#{$area}_370.jpg);
+						}
+					}
+
+				}
+
+				&:focus {
+					:before {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						content: '';
+						margin: -5px;
+						outline: 3px solid #0ed59a;
+					}
+				}
+
+
+			}
+
+			&.selected, &:hover {
+				opacity: 1.0;
+			}
+			&.selected, &:hover {
+				& > .record-item-inner:before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					content: '';
+					margin: -5px;
+					border: 3px solid #0ed59a;
+					border-radius: 3px;
+				}
+			}
+
+		}
+	}
+}

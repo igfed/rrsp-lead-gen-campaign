@@ -1,0 +1,112 @@
+$tablet-sm-width-min: 768px;
+$tablet-lg-width-min: 1024px;
+$desktop-width-min: 1440px;
+
+$iphone-6plus-tall: 736px;
+$iphone-6plus-narrow: 414px;
+
+@mixin iphone-5s {
+	@media only screen 
+	and (min-device-width: $iphone-5s-narrow) 
+	and (max-device-width: 567px) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+		@content;
+  }
+}
+
+@mixin iphone-5s-landscape {
+	@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+		@content;
+  }
+}
+
+@mixin iphone-6 {
+	@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+  	@content;
+  }
+}
+
+@mixin bp-iphone-6plus {
+	@media only screen and (min-device-width: $iphone-6plus-narrow) 
+	and (max-device-width: $iphone-6plus-tall) 
+	and (-webkit-min-device-pixel-ratio: 3) {
+		@content;
+	}
+}
+
+@mixin bp-iphone-6plus-portrait {
+	@media only screen and (min-device-width: $iphone-6plus-narrow) 
+	and (max-device-width: $iphone-6plus-tall) 
+	and (-webkit-min-device-pixel-ratio: 3) 
+	and (orientation: portrait) {
+		@content;
+	}
+}
+
+@mixin bp-iphone-6plus-landscape {
+	@media only screen 
+	and (min-device-width: $iphone-6plus-narrow) 
+	and (max-device-width: $iphone-6plus-tall) 
+	and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin bp-mobile {
+	@media only screen 
+	and (min-width: 0px) and (max-width: #{$tablet-sm-width-min - 1px}) {
+		@content;
+	}
+}
+
+@mixin bp-mobile-port {
+	@media only screen and (min-width: 0px) and (max-width: #{$tablet-sm-width-min - 1px}) and (orientation: portrait) {
+		@content;
+	}
+}
+
+@mixin bp-mobile-land {
+	@media only screen and (min-width: 0px) and (max-width: #{$tablet-sm-width-min - 1px}) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin bp-tablet {
+	@media only screen and (min-width: #{$tablet-sm-width-min}) and (max-width: #{$desktop-width-min - 1px}) and (-webkit-min-device-pixel-ratio: 2) {
+		@content;
+	}
+}
+
+@mixin bp-tablet-land {
+	@media only screen and (min-width: #{$tablet-sm-width-min}) and (max-width: #{$desktop-width-min - 1px}) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin bp-tablet-sm {
+	@media only screen and (min-width: #{$tablet-sm-width-min}) 
+	and (max-width: #{$tablet-lg-width-min - 1px}) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+		@content;
+	}
+}
+
+@mixin bp-tablet-lg {
+	@media only screen and (min-width: #{$tablet-lg-width-min}) 
+	and (max-width: #{$desktop-width-min - 1px}) {
+		@content;
+	}
+}
+
+@mixin bp-desktop {
+	@media only screen and (min-width: #{$desktop-width-min}) {
+		@content;
+	}
+}

@@ -1,0 +1,286 @@
+.area-l2.section.records {
+
+	.modal-container {
+
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000000;
+
+		//max-width: 1000px;
+		margin: 0 auto;
+
+		@media only screen and (min-width: 737px) {
+			position: absolute;
+			//position: static;
+			//top: auto;
+			//left: auto;
+			//right: auto;
+			//bottom: auto;
+	
+			margin: 56px 5.5%;
+		    display: table;
+		    width: 89%;
+		    min-height: 675px;
+		    height: 675px;
+		
+		}
+
+		$innerMargin: 3rem;
+
+		.modal-inner {
+			//position: absolute;
+			//top: 0; left: 0; right: 0; bottom: 0;
+			display: block;
+
+			background-color: white;
+			//width: 100%;
+			//max-width: 900px;
+			//min-height: 500px;
+			height: 100%;
+			padding: 0;
+
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+
+			@media only screen and (min-width: $modal-fullscreen-takeover-threshold-min) {
+				margin: $innerMargin auto;
+				//height: 500px;
+				//padding: 0 6rem;
+				padding: 0;
+
+				//@media only screen and (min-width: $modal-fullscreen-takeover-threshold-min) {
+				//	top: 50%;
+				//	-webkit-transform: translateY(-50%);
+				//	-moz-transform: translateY(-50%);
+				//	-ms-transform: translateY(-50%);
+				//	-o-transform: translateY(-50%);
+				//	transform: translateY(-50%);
+				//}
+
+			}
+
+			font-size: 1.1rem;
+
+			@media only screen and (min-width: 769px) {
+				//margin: 6rem;
+				//padding: 0 8rem;
+				font-size: 1.33rem;
+			}
+
+			@media only screen and (min-width: 1025px) {
+				font-size: 1.5rem;
+			}
+
+			.modal-content {
+				overflow-y: auto;
+				font-size: 1.2rem;
+				//padding: 6rem;
+				display: block;
+				background-color: white;
+
+				//padding: 2em 0;
+				padding: 4rem 6rem;
+
+				position: relative;
+
+				.title {
+					font-size: 3.5em;
+					line-height: 1;
+				}
+
+				.content {
+					margin-top: 2em;
+					p {
+						font-size: 1.25em;
+						line-height: 1.5;
+
+						a {
+							font-weight: bold;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			@media only screen and (min-width: 769px) {
+				.modal-content {
+
+
+					$edge: 10rem;
+					font-size: 1.25rem;
+					padding-left: $innerMargin + $edge * 1.5;
+					width:75%;
+					margin: 0 auto;
+
+					&:before {
+						content: '';
+						width: $edge;
+						height: $edge;
+						border-radius: $edge / 2;
+						display: block;
+						margin: 0;
+						margin-left: -13.5rem;
+						position: absolute;
+						//left: 0;
+						//top: 0;
+						background: transparent no-repeat center center;
+						background-size: contain;
+					}
+
+					@each $area in $areas {
+						&[data-recordid='#{$area}']:before {
+							background-image: url(#{$imgs}/icons/#{$area}.png);
+						}
+					}
+
+					.title {
+						//height: $edge;
+						//line-height: $edge;
+					}
+
+					.content {
+						margin-top: 2em;
+					}
+				}
+
+			}
+
+			@media only screen and (min-width: 1000px) {
+				.modal-content {
+					$edge: 100px;
+					&:before {
+						width: $edge;
+						height: $edge;
+						border-radius: $edge / 2;
+					}
+
+					.title {
+						//height: $edge;
+						//line-height: $edge;
+						//margin-left: $edge * 1.25;
+					}
+
+				}
+
+			}
+
+		}
+
+		.modal-cancel {
+			position: absolute;
+			//top: $innerMargin;
+			//right: $innerMargin;
+			top: 10px;
+			right: 10px;
+			width: 2rem;
+			height: 2rem;
+			padding: 1rem;
+			box-sizing: content-box;
+
+			display: block;
+			cursor: pointer;
+			text-align: center;
+		}
+
+		.modal-nav {
+			position: absolute;
+			z-index: 100;
+			top: 0;
+			bottom:0;
+			cursor: pointer;
+			display: table-cell;
+			vertical-align: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			box-sizing: content-box;
+			$padding-v: 6px;
+			$padding-h: 12px;
+			padding: $padding-v $padding-h;
+
+			$ratio: 1.9; // 1.9x taller than wide
+			$width: 12px;
+			width: $width;
+			$height: $width * $ratio;
+			height: $height;
+			//margin-top: 29%;
+			margin: auto;
+
+
+			$hOffset: 1.5em;
+
+			@media only screen and (min-width: 480px) {
+				$width: 15px;
+				width: $width;
+				$height: $width * $ratio;
+				height: $height;
+			}
+
+			&--prev {
+				//left: $innerMargin;
+				left: 30px;
+				//display: none;
+			}
+			&--next {
+				//right: $innerMargin;
+				right: 30px;
+				//display: none;
+			}
+
+		}
+
+	}
+
+	@media only screen and (min-width: 769px) and (max-width: 1200px) {
+		.modal-container { 
+			   margin-top: 0px;
+			   min-height: 555px;
+		       height: 555px;
+		}
+	}
+
+	@media only screen and (min-width: 551px) and (max-width: 768px) {
+		.modal-container .modal-inner .modal-content {
+		    padding: 4rem 10rem;
+		}
+	}
+
+	@media only screen and (min-width: 481px) and (max-width: 550px) {
+		.modal-container .modal-inner .modal-content {
+		    padding: 4rem 8rem;
+		}
+	}
+
+	@media only screen and (max-width: 736px) {
+		.modal-container .modal-inner .modal-content {
+		    padding: 4rem 5rem;
+		    height: 100vh;
+		}
+
+		.modal-container .modal-nav {
+
+			&--prev {
+				left: 0px;
+			}
+			&--next {
+				right: 0px;
+			}
+
+		}
+	}
+}
+body.ie9 .modal-nav {
+	margin-top: 29%!important;
+}
+ 
+body[data-lang=fr] .area-l2.section.records .modal-content {
+	.title {
+		font-size: 3.0em;
+		line-height: 1;
+	}
+}

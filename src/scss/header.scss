@@ -1,0 +1,165 @@
+.icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid gray;
+    display: inline-block;
+}
+.header.section {
+	overflow:visible;
+    position: absolute;
+    height: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 28px 0 0 0;
+    width: 100%;
+    z-index: 1;
+    text-align: right;
+
+	.m-nav {
+		cursor:pointer;
+		position: relative;
+		display: none;
+		width: 24px;
+		height: 24px;
+		background: url('#{$imgs}/m-nav.svg');
+        background-size: cover;
+
+	}
+
+    @include bp-mobile {
+        //margin: 0;
+        //height: 72px;
+        //padding: 6vmin;
+
+        .login-dd {
+			display: none;
+            margin: 0;
+
+        }
+
+        .sep {
+            display: none;
+        }
+
+		.searchbox {
+			display: none;
+		}
+
+		.m-nav {
+			display: inline-block;
+		}
+    }
+
+    > * {
+        vertical-align: top;
+    }
+
+	.header-logo-tagline {
+		display: block;
+		float: left;
+		width: 75%;
+		@media only screen and (min-width: 480px) {
+			width: 50%;
+			max-width: 283px;
+		}
+	}
+	.header-logo {
+		width: 100%;
+		$origW: 268px;
+		$origH: 37px;
+		max-height: 59px;
+		@include aspect-ratio($origW, $origH, '.logo');
+		@include hide-text;
+	}
+
+	.header-logo-copy {
+		margin-top: 0.75em;
+		display: block;
+		text-align: left;
+		color: $darkblue;
+		@include setFont($W_BK);
+		font-size: 1.4rem;
+		overflow: visible;
+		white-space: nowrap;
+	}
+
+	.logo-alone {
+        $origW: 241px;
+        $origH: 68px;
+        $logoRatio: $origH / $origW;
+
+        $targetW: 150px;
+        $targetH: $targetW * $logoRatio;
+
+        width: $targetW;
+        height: $targetH;
+
+        float: left;
+        background: transparent url(#{$imgs}/IG-logo-en.svg) no-repeat;
+        background-size: contain;
+
+		[data-lang=fr] & {
+			background-image: url(#{$imgs}/IG-logo-fr.svg);
+		}
+
+        padding-top: 50px;
+
+        //@include bp-mobile {
+        //    width: 100px;
+        //    //height: 30px;
+        //    padding-top: 34px;
+        //}
+    }
+
+	.logo {
+		text-indent: 999em;
+		overflow: hidden;
+		//$origW: 268px;
+		//$origH: 37px;
+		//$logoRatio: $origW / $origH;
+        //
+		////$targetW: 456px;
+		////$targetH: $targetW * $logoRatio;
+		//$targetH: 59px;
+		//$targetW: $targetH * $logoRatio;
+        //
+		//max-width: $targetW;
+		//max-height: $targetH;
+        //
+		//display: block;
+		background: transparent url(#{$imgs}/Logo_IG90_combined_TopLeft_E_RGB.png) no-repeat;
+		background-size: contain;
+
+		[data-lang=fr] & {
+			background-image: url(#{$imgs}/Logo_IG90_combined_TopLeft_F_RGB.png);
+		}
+
+		//padding-top: $targetH;
+		//overflow: visible;
+		//white-space: nowrap;
+
+		//@media only screen and (max-width: 1160px) {
+		//	max-width: 33%;
+		//}
+	}
+
+	@media only screen and (max-width: 925px) {
+	 .login-dd {
+			display: none;
+            margin: 0;
+
+        }
+
+        .sep {
+            display: none;
+        }
+
+		.searchbox {
+			display: none;
+		}
+
+		.m-nav {
+			display: inline-block;
+		}
+	}
+}

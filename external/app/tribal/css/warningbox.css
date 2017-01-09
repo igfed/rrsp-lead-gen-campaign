@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.warning {background-color: #fff3d9;}
+.callout {padding-top:36px;padding-bottom:36px; transition: opacity 500ms;color:#DD5C49;}
+.callout .calloutbox{border:1px solid #DD5C49;padding:20px;width:95%;border-radius:15px;display:table;margin:0 auto;}
+.callout .calloutbox .cellmate{display:table-cell;vertical-align:middle;}
+.cellmate img {padding-right:15px;}
+.callout.fadeOut{opacity: 0;}
+.callout h2{margin:0;padding:0;text-transform:none;color:#DD5C49;font-size:2em;font-weight:500;}
+.callout p {margin:0;padding:0;font-size:19px;}
+.callout a{text-decoration:underline;color:#666;font-size:1.5em;}
+.callout a:hover{text-decoration:none;}
+
+button {
+    -moz-appearance: none;
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    line-height: 1;
+    padding: 0;
+}
+[type="submit"], [type="button"] {
+    -moz-appearance: none;
+    border-radius: 0;
+}
+.close-button {
+    color: #8a8a8a;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 1;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+[data-whatinput="mouse"] .close-button {
+    outline: 0 none;
+}
+@media only screen and (max-width: 415px) and (min-width: 1023px) {
+
+}
+        
+@media only screen and (max-width: 414px) and (min-width: 0px) {
+
+}
+      
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+.callout .calloutbox{width:90%;display:block;}
+}
+@media only screen and (max-width: 568px) and (min-width: 0px) {
+.callout .calloutbox{width:90%;display:block;}
+}
+@media only screen and (max-width: 375px) and (min-width: 0px) {
+    .callout .calloutbox{width:90%;display:block;}
+    .callout .calloutbox .cellmate{display:block}
+    .cellmate img {float:left;margin-bottom:80px;}
+    .cellbar {border-right:none;}
+    .callout h2{font-size:17px;}
+    .callout p {font-size:14px;}
+    .callout a{font-size:14px;padding-left:inherit;}
+    .close-button {right: 45%;}
+}

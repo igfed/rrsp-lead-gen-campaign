@@ -1,0 +1,136 @@
+.rrsp {
+
+    .container {
+		margin: 50px 0 85px 0;
+        width:100%;
+		display:inline-block;
+
+        .illustration {
+			margin-left:75px;
+
+			background-image: url(#{$imgs}/ill-rrsp.png);
+            width: 225px;
+            height: 225px;
+			border-radius:50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .block--copy-btn-container {
+            width: calc(99% - 225px - 75px);
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .copy {
+            display: inline-block;
+            vertical-align: middle;
+            width: 80%;
+            padding: 0 10em 0 3.4em;
+
+            h3 {
+                font-size: 2.6em;
+                text-transform: none;
+            }
+
+            p {
+                font-size: 2.0rem;
+            }
+        }
+
+        .button--find {
+            display: inline-block;
+            vertical-align: middle;
+            width: 19%;
+        }
+
+        .outline-btn {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    @include bp-mobile {
+        .container {
+
+            text-align: center;
+            width: 100%;
+            margin: 2.5em 0;
+
+            .illustration {
+                margin: 0 auto;
+                width: 140px;
+                height: 140px;
+                background-size: 100%;
+                margin-bottom: 1.2em;
+            }
+
+            .copy {
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                font-size: 2.1em;
+                line-height: 1.2;
+
+                h3 {
+                    font-size: 1em;
+                    text-transform: none;
+                    line-height: 1.2;
+                }
+
+                p {
+                    font-size: 1.45rem;
+                }
+            }  
+
+            .button--find {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .block--copy-btn-container {
+                width: 100%;
+            }
+  
+        }
+    }
+
+    @media only screen and (max-width: 1150px) and (min-width: 768px) {
+        .container { 
+            .copy {
+                width: 100%;
+                padding: 0 0 0 3.4em;
+            }
+
+            .button--find {
+                width: 100%;
+                padding-left: 3.4em;
+            }
+        }
+    }
+
+    @include bp-tablet-sm {
+
+        .container .copy {
+            font-size: 2.4rem;
+        }
+    };
+
+     @media only screen and (max-width: 768px) and (min-width: 768px) {
+        .container { 
+            .copy {
+                width: 100%;
+                padding: 0 0 0 1.7em;
+
+                h3 {
+                    font-size: 1em;
+                    text-transform: none;
+                    line-height: 1.2;
+                }
+            }
+
+             
+
+        }
+    }
+}

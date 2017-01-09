@@ -1,0 +1,633 @@
+.areas {
+
+    @include bp-mobile {
+        padding: 6vmin;
+    };
+
+    &[data-persona='default'] {
+            .container .area .details .refine .yes-no {
+                display: none;
+            }
+    }
+
+    .container {
+
+
+        background: $offwhite;
+        border-top: 2px solid $black;
+        box-shadow: -2px 4px 6px 1px rgba(0,0,0,0.1);
+		margin-bottom: 80px;
+
+        @include bp-mobile {
+            border-width: 1px;
+            margin-bottom: 4vmin;
+        };
+
+        .area {
+
+            //padding: 10px 100px;
+            padding: 0 8.2%;
+            border-bottom: 1px solid $lightgrey;
+            background-color: #eff5f3;
+
+            @include bp-mobile {
+                padding: 0 6.05vmin;
+                border-bottom: 0;
+            };
+
+            &:last-child {
+                border: 0;
+            }
+
+            &.active {
+
+                .line-item {
+                    .description {
+                        opacity: 0;
+                    }
+
+                    .toggle svg {
+                        .ex,
+                        .circle {
+                            opacity: 1;
+                            transition: all .2s ease .15;
+                        }
+
+                        .chevron {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            &[data-areaid=investment],
+			&[data-areaid=investments]{
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/investments.png);
+                }
+            }
+            &[data-areaid=retirement] {
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/retirement.png);
+                }
+            }
+            &[data-areaid=mortgage] {
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/mortgage.png);
+                }
+            }
+            &[data-areaid=estate-planning] {
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/estate-planning.png);
+                }
+            }
+
+            &[data-areaid=tax-planning] {
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/tax-planning.png);
+                }
+            }
+            &[data-areaid=insurance] {
+                .line-item .label .icon {
+                    background-image: url(#{$imgs}/icons/insurance.png);
+                }
+            }
+
+            &.opportunity {
+
+                background-color: #fbfcfc;
+                .line-item > svg {
+                    display: block;
+
+                }
+            }
+
+            h3 {
+                border-bottom: 1px solid $black;
+            }
+
+
+            .line-item {
+
+                position: relative;
+                background: transparent;
+
+                @include bp-mobile {
+                    padding: 0;
+                };
+
+                > * {
+                    vertical-align: middle;
+                }
+
+                > svg {
+                    width: 14px;
+                    height: 13px;
+                    position: absolute;
+                    top: calc(50% - 7px);
+                    left: -30px;
+                    display: none;
+
+                    @include bp-mobile {
+                        width: 10.5px;
+                        height: 10px;
+                        left: -4.6vmin;
+                        top: calc(50% - 5px);
+                    }
+                }
+
+                .label {
+                    display: inline-block;
+                    width: 40%;
+                    padding: 15px 0;
+
+                    text-transform: lowercase;
+                    @include setFont($W_M_SC);
+                    font-size: 2.4rem;
+                    color: $darkblue;
+
+                    @include bp-mobile {
+                        font-size: 1.8rem;
+                        padding: 3vmin 0;
+                    }
+
+
+                    > * {
+                        vertical-align: middle;
+                    }
+
+                    .icon {
+                        margin-right: 10px;
+                        background-size: cover;
+                        border: 0;
+                        width: 60px;
+                        height: 60px;
+						border-radius:50%;
+
+                        @include bp-mobile {
+                            width: 37px;
+                            height: 37px;
+                        }
+                    }
+
+                    .label-inner {
+                        display: inline-block;
+                        width: calc(100% - 60px - 20px);
+                        white-space: normal;
+                    }
+
+                }
+
+                .description {
+                    @include setFont($W_BK);
+                    font-size: 1.8rem;
+                    color: $darkblue;
+                    transition: opacity .2s ease;
+                    display: inline-block;
+                    width: calc(58% - 30px);
+                    padding: 0 1em;
+
+                    @include bp-mobile {
+                        display: none;
+                    }
+                }
+
+                .toggle {
+                    position: absolute;
+                    display: inline-block;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    @include bp-mobile {
+                        right: 5px;
+                    };
+
+                    &:hover {
+                        svg {
+                            transform: scale(1.1);
+                            path {
+                                // fill: $darkblue;
+                            }
+                        }
+                    }
+                    &:active {
+                        svg {
+                            transform: scale(1);
+                        }
+                    }
+
+                    svg {
+                        width: 32px;
+                        height: 32px;
+                        transition: all .2s ease;
+                        transform: scale(1);
+                        transform-origin: center;
+
+                        @include bp-mobile {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        path {
+                            fill: $middlegreen;
+                            transition: all .2s ease;
+                        }
+
+                        .ex,
+                        .circle {
+                            opacity: 0;
+                        }
+
+                        .chevron {
+                            opacity: 1;
+                            transition: all .2s ease .15;
+                        }
+                    }
+
+                }
+            }
+
+            .details {
+
+                display: block;
+                background: transparent;
+                overflow: hidden;
+                //padding: 0 100px;
+                padding: 0 10%;
+
+                max-height: 0;
+                transition: max-height 0.25s ease;
+                transition-delay: 0;
+
+                &.active {
+                    max-height: 1500px;
+                    transition-delay: .25s;
+                }
+
+                .description {
+                    @include setFont($W_L);
+                    font-size: 5rem;
+                    line-height: 1;
+                }
+
+                p {
+                    width: 70%;
+                    @include setFont($W_M);
+                    font-size: 2.4rem;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+
+
+                .tips {
+
+                    position: relative;
+
+                    .slick-wrap {
+                        padding: 2.5em 3.5em;
+                    }
+
+                    .slick-slide {
+                        text-align: center;
+                        display: inline-block;
+                        float:none;
+                        vertical-align: middle;
+                        p {
+                            margin: auto;
+                            text-align: left;
+                        }
+                    }
+
+                    .slick-dots {
+                        display: block;
+                        text-align: center;
+                        margin: 0;
+
+                        li {
+                            display: inline-block;
+
+                            &.slick-active button {
+                                opacity: 1;
+                            }
+
+                            button {
+
+                                outline: none;
+                                font-size:0;
+                                color: transparent;
+                                background: transparent;
+
+                                opacity: .3;
+
+                                &:before {
+                                    font-size: 5rem;
+                                    content:"\2022";
+                                    color: $middlegreen;
+                                }
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+
+                            }
+                        }
+
+
+
+                    }
+
+
+                    .line-arrow {
+                        position: absolute;
+                        top: calc(50% - 5em - 15px);
+                        border-color: $middlegreen;
+                    }
+
+                    .line-arrow--left {
+                        left: 10px;
+                    }
+
+                    .line-arrow--right {
+                        right: 10px;
+                    }
+
+                }
+
+                .did-you-know,
+                .yes-no {
+
+                    display: inline-block;
+                    vertical-align: top;
+                    @include setFont($W_BK);
+                    font-size: 2.2rem;
+
+                }
+
+                .did-you-know {
+
+                    width: 60%;
+                    padding-right: 5%;
+
+                    &.solo {
+                        width: 100%;
+
+                        .info {
+                            padding:0 10%;
+                            text-align: center;
+                        }
+                    }
+
+                    > * {
+                        vertical-align: top;
+                    }
+
+                    .info {
+                    }
+
+                }
+
+                .yes-no {
+
+                    display: inline-block;
+                    width: 39%;
+
+                    .yes-no--option {
+
+                        cursor: pointer;
+                        @include setFont($W_BK_SC);
+                        font-size: 1.8rem;
+                        text-transform: lowercase;
+                        display: inline-block;
+                        margin: .5em 1em 0 0;
+
+
+                        > * {
+                            vertical-align: middle ;
+                        }
+
+                        .icon {
+                            width: 36px;
+                            height: 36px;
+                            border: 3px solid $middlegreen;
+                            border-radius: 50px;
+                            margin-right: 9px;
+                            transition: transform .2s ease;
+
+                            &:before {
+
+                                content: 'Y';
+                                text-align: center;
+                                display: block;
+                                @include setFont($W_SB);
+                                text-transform: uppercase;
+                                line-height: 2.2;
+                                font-size: 0.8em;
+                            }
+                        }
+
+                        &:hover {
+                            .icon {
+                                transform: scale(1.2);
+                                @include bp-mobile {
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+
+                        &.yes-no--yes {
+                            .icon:before {
+                                content: 'Y';
+                                [data-lang=fr] & {
+                                    content: 'O';
+                                }
+                            }
+                        }
+
+                        &.yes-no--no {
+                            .icon:before {
+                                content: 'N';
+                            }
+                        }
+
+                        &.selected {
+                            .icon {
+                                background-color: $middlegreen;
+                            }
+                        }
+                    }
+                }
+
+                .outline-btn {
+                    //color: $darkblue;
+
+                    display: block;
+                    margin: 3em auto;
+                    width: 50%;
+
+                    //&:hover {
+                    //    color: $middlegreen;
+                    //}
+                }
+
+                @include bp-mobile {
+                    border-bottom: 1px solid #e3eaea;
+                    padding: 0;
+
+                    .description {
+                        display: block;
+                        margin-top: 1em;
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.65rem;
+                        margin-top: 0.7em;
+                        line-height: 1.5;
+                        width: 100%;
+                    }
+
+                    .tips {
+
+                        p {
+                            font-size: 1.35rem;
+                            width: 100%;
+                        }
+
+                        .slick-wrap {
+                            padding: 1em 2em;
+                        }
+
+                        .slick-slide {
+                            p {
+                                text-align: center;
+                            }
+                        }
+
+                        .slick-dots {
+
+                            li {
+
+                                margin: 0.1em;
+
+                                button:active,
+                                button:focus,
+                                button:hover,
+                                button {
+                                    &:before {
+                                        font-size: 2.8rem;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .line-arrow {
+                            width: 15px;
+                            height: 15px;
+                            border-width: 2px;
+                            top: calc(50% - 15px - 2.7em);
+
+                            &.line-arrow--left {
+                                left:3px;
+                            }
+                            &.line-arrow--right {
+                                right:3px;
+                            }
+                        }
+
+                    } // END .tips
+
+                    .did-you-know,
+                    .yes-no {
+
+                        display: block;
+                        vertical-align: top;
+                        @include setFont($W_BK);
+                        font-size: 1.6rem;
+                        width: 100%;
+
+                    }
+
+                    .did-you-know {
+
+                        width: 100%;
+                        padding-right: 0;
+                        margin-bottom: 2em;
+
+                        &.solo {
+                            .info {
+                                padding:0;
+                                text-align: left;
+                            }
+                        }
+
+                        .info {
+                            padding:0;
+                            text-align: left;
+                        }
+
+                    }
+
+                    .outline-btn {
+                        margin: 1.6em auto;
+                        font-size: 1.45rem;
+                        width: 100%;
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    @include bp-tablet-sm {
+
+        .container .area .line-item .label .label-inner {
+            [data-lang=fr] & {
+                font-size: 0.8em;
+            }
+        }
+
+        .container .area .details {
+            padding: 0 5%;
+        }
+        .container .area .details .description {
+            font-size: 4rem;
+        }
+
+        .container .area .details p {
+            font-size: 1.9rem;
+            width:80%;
+        }
+
+        .container .area .details .tips .slick-slide p {
+            font-size: 1.9rem;
+            width: 95%;
+        }
+
+        .container .area .details .did-you-know,
+        .container .area .details .yes-no {
+            font-size: 1.6rem;
+        }
+    };
+
+    @include bp-tablet-lg {
+        .areas .container .area .line-item .label .label-inner {
+                font-size: 2.8rem;
+        }
+        .areas .container .area .line-item .description{
+            font-size: 2rem;
+        }
+    };
+    @include bp-desktop {
+        .container .area .line-item .label .label-inner {
+                font-size: 2.8rem;
+        }
+        .container .area .line-item .description{
+            font-size: 2rem;
+        }
+    };
+}

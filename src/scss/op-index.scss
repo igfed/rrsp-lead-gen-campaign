@@ -1,0 +1,216 @@
+.op-index {
+
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: $beige;
+    border-top: 3px solid $darkblue;
+    border-bottom: 3px solid $white;
+    color: $darkblue;
+    transition: none;
+
+    &.floating {
+        position: fixed;
+        z-index: 21;
+        // top:100%;
+        bottom:0;
+        width: 100%;
+		overflow:visible;
+
+        &.do-transition {
+            transition: transform .25s ease-out;
+        }
+        &.closed {
+            transform: translateY(0);
+        }
+        &.collapsed {
+            transform: translateY(-30px);
+            .icon--toggle {
+                transform: rotate(180deg);
+            }
+        }
+        &.expanded {
+            transform: translateY(-100%);
+        }
+
+        &.expanded,
+        &.collapsed {
+            .icon--toggle {
+                pointer-events: auto;
+                opacity: 1;
+            }
+        }
+    }
+
+    .icon--toggle {
+		cursor:pointer;
+        position: absolute;
+        top: -15px;
+        right: 8.2%;
+
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .2s ease;
+
+        border-radius: 50%;
+        border: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        margin: 0 0 20px 0;
+    }
+
+    .block--score,
+    .block--instructions,
+    .block--cta {
+        width: 29%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .block--score {
+
+        padding-right: 4em;
+
+        .score {
+            > * {
+                text-align: right;
+            }
+
+            .score--number {
+                @extend .three-d;
+                font-size: 12rem;
+                @include setFont($W_SB);
+                line-height: 1;
+            }
+
+            .score--label {
+                @include setFont($W_M_SC);
+                font-size: 1.8rem;
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    .block--instructions {
+
+        text-align: center;
+        width: 40%;
+        .oplink--cta,
+        .copy-alt {
+            display: none;
+        }
+
+        .copy-alt,
+        .copy {
+            @include setFont($W_M);
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .oplinks li {
+            display: inline-block;
+            margin: 0 2rem;
+        }
+    }
+
+    .block--cta {
+
+        padding-left: 6em;
+
+        .oplink--cta {
+            font-size: 1.8rem;
+            padding: calc(4px - 0.2em) 4px 4px 4px;
+            margin-bottom: 1em;
+            line-height: 1;
+        }
+
+        .copy-alt,
+        .copy {
+            @include setFont($W_M);
+            font-size: 1.8rem;
+            margin-top: 1em;
+        }
+
+
+    }
+
+    @include bp-mobile {
+
+        padding: 6vmin 12vmin;
+
+        .block--score,
+        .block--instructions,
+        .block--cta {
+            width: 100%;
+            display: block;
+            padding: 0;
+            text-align: left;
+        }
+
+        .block--score {
+
+            margin-bottom: 1em;
+
+            .score > * {
+                text-align: center;
+
+                &.score--number {
+                    font-size: 8.5rem;
+                }
+
+                &.score--label {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .block--instructions {
+
+            .oplink--cta,
+            .copy-alt {
+                display: block;
+            }
+
+            .copy,
+            .copy-alt {
+                @include setFont($W_BK);
+                text-align: left;
+                font-size: 1.6rem;
+                margin-bottom: 1em;
+            }
+
+            .oplink--cta {
+                font-size: 1.45rem;
+                letter-spacing: .05em;
+                margin-top: 2em;
+            }
+
+            .oplinks {
+                margin-top: 2em;
+                li {
+                    display: block;
+                    margin: 0;
+
+                    a {
+                        font-size: 1.45rem;
+                        letter-spacing: .03em;
+                    }
+                }
+            }
+        }
+
+        .block--cta {
+            display: none;
+        }
+    };
+
+    @include bp-tablet-sm {
+        .block--cta .oplink--cta {
+            font-size: 1.5rem;
+            line-height: 0.9;
+        }
+    };
+}
