@@ -129,17 +129,18 @@
 
   function GeoLocationModule(serviceDependency) {
     var acceptedCities = [
-    'Toronto',
-    'Windsor',
-    'Richmond Hill',
-    'Dartmouth',
-    'Calgary',
-    'Edmonton',
-    'Victoria',
-    'Montreal',
-    'Saskatoon',
-    'Quebec City',
-    'Winnipeg'
+    'toronto',
+    'windsor',
+    'richmond hill',
+    'dartmouth',
+    'calgary',
+    'edmonton',
+    'victoria',
+    'montreal',
+    'montréal',
+    'saskatoon',
+    'quebec city',
+    'ville de québec'
     ]
     var $ctaPaneRequest = $('.retirement-cta-pane--request');
     getCoordinates();
@@ -155,8 +156,14 @@
         $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + ","+ position.coords.longitude +"&key=AIzaSyB-owYhB99ivBbt0oNphrTei2YHN73BvSw", function(data){
           if (data.status === "OK") {
             response = data.results[0].address_components;
-            if (isAcceptedCity(response[3].long_name)) {
-              $ctaPaneRequest.show();
+            // Search those address pieces for a city name
+            var cities = returnCityNames(response);
+            for (var i=0; i<cities.length; i++) {
+              var city = cities[i].toLowerCase();
+              // If the city name is from the approved list show the CTA request pane
+              if ( isAcceptedCity(city) ) {
+                $ctaPaneRequest.show();
+              }
             }
           }
         });
@@ -174,7 +181,18 @@
           result = true;
         }
       }
-      // console.log('Accepted City =',result);
+      return result;
+    }
+
+    function returnCityNames(address) {
+      var result = [];
+      for (var i=0; i<address.length; i++) {
+        for (var j=0; j<address[i].types.length; j++) {
+          if (address[i].types[j] === "locality") {
+            result.push(address[i].long_name);
+          }
+        }
+      }
       return result;
     }
   } // End GeoLocationModule
