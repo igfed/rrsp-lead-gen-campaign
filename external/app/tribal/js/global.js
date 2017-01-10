@@ -173,7 +173,6 @@ var igTrack = (function () {
 
 })();
 
-
 // SEARCH BOX
 $('.searchbox button').click(function (e) {
 
@@ -229,7 +228,6 @@ if (
 ) {
   document.body.className += ' ie9';
 }
-
 
 var player,
   APIModules,
@@ -290,7 +288,7 @@ if ($('html').attr('lang') == 'fr') {
   $('.accordion--subnav').css({
     "margin-left": 0,
     "width": "100%"
-  })
+  });
   //$('#panel1b ul.accordion--subnav li:last-child a').attr('href','https://bvi.bnc.ca/index/investorsgroup/indexen.html')
 }
 
