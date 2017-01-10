@@ -26,7 +26,7 @@
     var service,
       formMarkupSelector = '.call-request-form',
       formSelector = '#callForm',
-      callRequestEndpoint = 'assets/data/success.json';
+      callRequestEndpoint = 'https://api.ig.ddb.to/lead';
     init();
 
     function init() {
@@ -40,8 +40,11 @@
       var form = $(formSelector),
         queryString,
         formData,
-        requestData = {},
-        i;
+        requestData = {
+          "areas_of_interest": []
+        },
+        i,
+        topics = ["Retirement", "Estate Planning", "Investment", "Tax Planning", "Insurance", "Mortgage"];
 
       event.preventDefault();
       if (form.valid()) {
@@ -49,10 +52,19 @@
         $(formMarkupSelector).addClass('submitting');
         formData = $(formSelector).serializeArray();
         for (i = 0; i < formData.length; i++) {
-          requestData[formData[i].name] = formData[i].value;
+          if (i < 6 || formData[i].name === "current_client") {
+            requestData[formData[i].name] = formData[i].value;
+          }
+          if (topics.indexOf(formData[i].name) !== -1) {
+            requestData.areas_of_interest.push(formData[i].name);
+          }
         }
-        requestData['language'] = $('body').attr('data-lang').toUpperCase();
-        requestData['province'] = service.getProvince();
+
+        var optIn = formData.filter(function (field) {
+          return field.name === 'opt_in';
+        })[0];
+        requestData.opt_in = (optIn) ? 'Yes' : 'No';
+        requestData.language = $('body').attr('data-lang').toUpperCase();
         submitCallRequest(requestData);
       }
 
@@ -67,19 +79,19 @@
         success: "valid"
       });
 
-      $.validator.addMethod("cdnPostal", function(postal, element) {
+      $.validator.addMethod("cdnPostal", function (postal, element) {
         return this.optional(element) ||
           postal.match(/[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/);
       }, "Please specify a valid postal code.");
 
       form.validate({
-        // errorPlacement: function (label, element) {
-        //   if (element.attr("name") === "currentClient") {
-        //     label.insertBefore(element);
-        //   } else {
-        //     label.insertAfter(element); // standard behaviour
-        //   }
-        // },
+        errorPlacement: function (label, element) {
+          if (element.attr("name") === "current_client") {
+            label.insertBefore(element);
+          } else {
+            label.insertAfter(element); // standard behaviour
+          }
+        },
         rules: {
           phone: {
             required: true,
@@ -116,10 +128,12 @@
         url: callRequestEndpoint,
         data: data
       }).success(function (msg) {
+        console.log(msg);
         showSuccessModal();
         $(formMarkupSelector).removeClass('submitting');
       })
         .error(function (msg) {
+          console.log(msg);
           $(formSelector).addClass('server-error');
           $(formMarkupSelector).removeClass('submitting');
           ScrollMan.to($('#server-error'));
@@ -268,26 +282,16 @@
       province;
 
     return {
-      openModal: openModal,
-      setProvince: setProvince,
-      getProvince: getProvince
-    }
+      openModal: openModal
+    };
 
     //-----
-
-    function getProvince() {
-      return province;
-    }
 
     function openModal(rendered) {
       rendered.modal({
         fadeDuration: modalFadeDuration,
         fadeDelay: modalFadeDelay
       });
-    }
-
-    function setProvince(newProvince) {
-      province = newProvince;
     }
   }
 
