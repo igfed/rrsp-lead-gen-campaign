@@ -330,11 +330,11 @@
         </div>
 
         <div class="video-container">
-            <div class="video-spinner-container" style="display: none;">
+            <div class="video-spinner-container">
                 <div class="video-spinner"></div>
             </div>
             <a href="#" title="video" class="js-video-play-btn">
-                <div class="video-image js-video-play" style="display: block;"></div>
+                <div class="video-image js-video-play"></div>
             </a>
             <div class="video-container-responsive">
                 <!-- Start of Brightcove Player -->
@@ -349,14 +349,29 @@
 
                 <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
-                <object type="application/x-shockwave-flash" id="myExperience4692154245001" width="100%" height="100%" class="BrightcoveExperience BrightcoveExperienceID_1088" seamlesstabbing="undefined" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=100%25&amp;height=100%25&amp;flashID=myExperience4692154245001&amp;identifierClassName=BrightcoveExperienceID_1088&amp;htmlFallback=true&amp;bgcolor=%23FFFFFF%20&amp;playerID=4721138328001&amp;playerKey=AQ~~%2CAAADjafw_sk~%2C383Vbs13HVAXHnb_e-BAb9SMMY6kMHnV&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;wmode=opaque&amp;%40videoPlayer=4727877521001&amp;includeAPI=true&amp;templateLoadHandler=onTemplateLoad&amp;templateReadyHandler=brightcove%5B%22templateReadyHandlermyExperience4692154245001%22%5D&amp;autoStart=&amp;debuggerID=&amp;originalTemplateReadyHandler=onTemplateReady&amp;startTime=1484065420235"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="opaque"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF "></object>
+                <object id="myExperience4692154245001" class="BrightcoveExperience">
+                    <param name="htmlFallback" value="true">
+                    <param name="bgcolor" value="#FFFFFF ">
+                    <param name="width" value="100%">
+                    <param name="height" value="100%">
+                    <param name="playerID" value="4721138328001">
+                    <param name="playerKey" value="AQ~~,AAADjafw_sk~,383Vbs13HVAXHnb_e-BAb9SMMY6kMHnV">
+                    <param name="isVid" value="true">
+                    <param name="isUI" value="true">
+                    <param name="dynamicStreaming" value="true">
+                    <param name="wmode" value="opaque">
+                    <param name="@videoPlayer" value="4727877521001">
+                    <param name="includeAPI" value="true">
+                    <param name="templateLoadHandler" value="onTemplateLoad">
+                    <param name="templateReadyHandler" value="onTemplateReady">
+                </object>
 
                 <!--
                 This script tag will cause the Brightcove Players defined above it to be created as soon
                  as the line is read by the browser. If you wish to have the player instantiated only after
                  the rest of the HTML is processed and the page load is complete, remove the line.
                  -->
-                <script type="text/javascript">brightcove.createExperiences();</script><script type="text/javascript" src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
+                <script type="text/javascript">brightcove.createExperiences();</script>
 
                 <!-- End of Brightcove Player -->
             </div>
