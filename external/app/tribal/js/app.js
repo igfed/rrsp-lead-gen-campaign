@@ -142,106 +142,74 @@
   }
 
   function GeoLocationModule(serviceDependency) {
-    var service,
-      article,
-      mapDeferred,
-      acceptedCities = {
-        Toronto: 'Ontario',
-        Winnipeg: 'Manitoba',
-        Cupertino: 'California'
-      };
+    var acceptedCities = [
+    'toronto',
+    'windsor',
+    'richmond hill',
+    'dartmouth',
+    'calgary',
+    'edmonton',
+    'victoria',
+    'montreal',
+    'montréal',
+    'saskatoon',
+    'quebec city',
+    'ville de québec'
+    ]
+    var $ctaPaneRequest = $('.retirement-cta-pane--request');
+    getCoordinates();
 
-    init();
-
-    function init() {
-      service = serviceDependency;
-      article = $('article');
-      window.FCHandleMapInit = handleMapInit;
-      startLocationCheck();
-    }
-
-    //-----
-
-    function handleReverseGeoLocationResponse(results, status) {
-      var i,
-        j,
-        components,
-        valid = false,
-        current;
-
-      if (status === 'OK') {
-        if (results[1]) {
-          components = results[1].address_components;
-          for (i = 0; i < components.length; i++) {
-            current = acceptedCities[components[i].long_name];
-            if (current) {
-              for (j = 0; j < components.length; j++) {
-                if (current === components[j].long_name) {
-                  service.setProvince(components[j].short_name);
-                  valid = true;
-                  break;
-                }
-              }
-              if (valid) {
-                break;
+    // Get current location
+    function getCoordinates() {
+      if (!navigator.geolocation){
+        return;
+      }
+      function success(position) {
+        // If successful turn that lat and long in to an address
+        var response = [];
+        $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + ","+ position.coords.longitude +"&key=AIzaSyB-owYhB99ivBbt0oNphrTei2YHN73BvSw", function(data){
+          if (data.status === "OK") {
+            response = data.results[0].address_components;
+            // Search those address pieces for a city name
+            var cities = returnCityNames(response);
+            for (var i=0; i<cities.length; i++) {
+              var city = cities[i].toLowerCase();
+              // If the city name is from the approved list show the CTA request pane
+              if ( isAcceptedCity(city) ) {
+                $ctaPaneRequest.show();
               }
             }
           }
-          if (valid) {
-            article.addClass('geo-valid');
-          } else {
-            article.addClass('geo-invalid');
-          }
-        } else {
-          setGeoInvalid();
+        });
+      }
+      function error() {
+        console.log('Error with geolocation');
+      }
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+    function isAcceptedCity(city) {
+      var result = false;
+      for (var i=0; i<acceptedCities.length; i++) {
+        if (city === acceptedCities[i]) {
+          result = true;
         }
-      } else {
-        setGeoInvalid();
       }
+      return result;
     }
 
-    function handleMapInit() {
-      if (mapDeferred) mapDeferred.resolve();
-    }
-
-    function startLocationCheck() {
-      if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(startReverseGeoLocation, setGeoInvalid);
-        mapDeferred = jQuery.Deferred();
-        $('body').on('mousedown', setGeoInvalid);
-      } else {
-        setGeoInvalid();
-      }
-    }
-
-    function startReverseGeoLocation(position) {
-      var geocoder;
-
-      $('body').off('mousedown', setGeoInvalid);
-      article.removeClass('geo-invalid');
-      mapDeferred.then(function () {
-        geocoder = new google.maps.Geocoder;
-        geocoder.geocode({
-          'location': {
-            // Actual:
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-            // Brampton:
-            // lat: 43.6833,
-            // lng: -79.7667
-            // Winnipeg:
-            // lat: 49.8998,
-            // lng: -97.1375
+    function returnCityNames(address) {
+      var result = [];
+      for (var i=0; i<address.length; i++) {
+        for (var j=0; j<address[i].types.length; j++) {
+          if (address[i].types[j] === "locality") {
+            result.push(address[i].long_name);
           }
-        }, handleReverseGeoLocationResponse);
-      });
+        }
+      }
+      return result;
     }
-
-    function setGeoInvalid() {
-      $('body').off('mousedown', setGeoInvalid);
-      article.addClass('geo-invalid');
-    }
-  }
+  } // End GeoLocationModule
 
   function SeeMoreModule() {
     var toExpand,
