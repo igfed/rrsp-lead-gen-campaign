@@ -67,7 +67,7 @@
 
         requestData.opt_in = (optIn) ? 'Yes' : 'No';
         requestData.language = $('body').attr('data-lang').toUpperCase();
-        // submitCallRequest(requestData);
+        submitCallRequest(requestData);
       }
 
       return false;
