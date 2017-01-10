@@ -40,11 +40,10 @@
       var form = $(formSelector),
         queryString,
         formData,
-        requestData = {
-          "areas_of_interest": []
-        },
+        requestData = {},
         i,
-        topics = ["Retirement", "Estate Planning", "Investment", "Tax Planning", "Insurance", "Mortgage"];
+        topics = ["Retirement", "Estate Planning", "Investment", "Tax Planning", "Insurance", "Mortgage"],
+        chosenTopics = [];
 
       event.preventDefault();
       if (form.valid()) {
@@ -56,16 +55,19 @@
             requestData[formData[i].name] = formData[i].value;
           }
           if (topics.indexOf(formData[i].name) !== -1) {
-            requestData.areas_of_interest.push(formData[i].name);
+            chosenTopics.push(formData[i].name);
           }
         }
+
+        requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join(): "";
 
         var optIn = formData.filter(function (field) {
           return field.name === 'opt_in';
         })[0];
+
         requestData.opt_in = (optIn) ? 'Yes' : 'No';
         requestData.language = $('body').attr('data-lang').toUpperCase();
-        submitCallRequest(requestData);
+        // submitCallRequest(requestData);
       }
 
       return false;

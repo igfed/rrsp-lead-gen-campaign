@@ -649,4 +649,9 @@ article:not(.geo-invalid) .geo-unavailable {
 	background: transparent !important;
 }
 
+#callForm #current_client-error {
+	position: absolute !important;
+	top: 70px;
+}
+
 /*# sourceMappingURL=style.css.map */
