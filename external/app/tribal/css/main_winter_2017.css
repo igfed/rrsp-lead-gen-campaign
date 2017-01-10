@@ -23944,7 +23944,8 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content p, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content p {
-		min-height: 100px
+		min-height: 100px;
+		max-width: 80% !important;
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content .outline-btn, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content .outline-btn {
