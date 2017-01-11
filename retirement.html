@@ -333,6 +333,7 @@
                 <div class="video-image js-video-play"></div>
             </a>
             <div class="video-container-responsive">
+
                 <!-- Start of Brightcove Player -->
                 <div style="display:none">
 
@@ -343,7 +344,9 @@
                 found at https://accounts.brightcove.com/en/terms-and-conditions/.
                 -->
 
-                <script language="JavaScript" type="text/javascript" src="/en/js/corp/BrightcoveExperiences.js"></script>
+                <script language="JavaScript" type="text/javascript"
+                        src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js">
+                </script>
 
                 <object id="myExperience4692154245001" class="BrightcoveExperience">
                     <param name="htmlFallback" value="true">
@@ -360,6 +363,8 @@
                     <param name="includeAPI" value="true">
                     <param name="templateLoadHandler" value="onTemplateLoad">
                     <param name="templateReadyHandler" value="onTemplateReady">
+                    <param name="secureConnections" value="true" />
+                    <param name="secureHTMLConnections" value="true" />
                 </object>
 
                 <!--

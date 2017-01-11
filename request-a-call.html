@@ -307,7 +307,8 @@
                 </div>
                 <div class="row">
                     <div class="small-8 columns end">
-                        <p>If you would like to speak with an Investors Group Advisor about your retirement, please complete the fields below, and click “Send Request”.</p>
+                        <p>If you would like to speak with an Investors Group Advisor about your retirement, please
+                            complete the fields below, and click “Send Request”.</p>
                     </div>
                 </div>
                 <div class="row server-error" id="server-error">
@@ -317,21 +318,28 @@
                 <div class="row">
                     <div class="small-12 medium-6 columns">
                         <label for="firstname" class="screen-reader-only">Your first name</label>
-                        <input spellcheck="false" placeholder="First name" id="firstname" name="firstname" type="text"
-                               minlength="2" required="" aria-required="true"
-                               style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="First name" id="firstname" name="firstname"
+                                   type="text"
+                                   minlength="2" required="" aria-required="true"
+                                   style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        </div>
                     </div>
                     <div class="small-12 medium-6 columns">
                         <label for="lastname" class="screen-reader-only">Your last name</label>
-                        <input spellcheck="false" placeholder="Last name" id="lastname" name="lastname" type="text"
-                               minlength="2" required="" aria-required="true">
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Last name" id="lastname" name="lastname" type="text"
+                                   minlength="2" required="" aria-required="true">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-12 medium-4 columns">
                         <label for="phone" class="screen-reader-only">Your phone number</label>
-                        <input spellcheck="false" placeholder="Phone number" id="phone" name="phone" type="tel"
-                               required="" aria-required="true">
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Phone number" id="phone" name="phone" type="tel"
+                                   required="" aria-required="true">
+                        </div>
                     </div>
 
                     <div class="small-12 medium-2 columns">
@@ -342,15 +350,21 @@
 
                     <div class="small-12 medium-6 columns">
                         <label for="email" class="screen-reader-only">Your email address</label>
-                        <input spellcheck="false" placeholder="Email" id="email" name="email" type="email" required=""
-                               aria-required="true">
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Email" id="email" name="email" type="email"
+                                   required=""
+                                   aria-required="true">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-12 medium-6 columns end">
                         <label for="postal" class="screen-reader-only">Your postal code</label>
-                        <input spellcheck="false" placeholder="Postal code" id="postal_code" name="postal_code" type="text"
-                               required="" aria-required="true">
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Postal code" id="postal_code" name="postal_code"
+                                   type="text"
+                                   required="" aria-required="true">
+                        </div>
                     </div>
                 </div>
 
@@ -436,12 +450,14 @@
         <div class="success-message">
             <div class="row">
                 <div class="small-12 columns">
-                    <div class="check"></div><span>Success!</span>
+                    <div class="check"></div>
+                    <span>Success!</span>
                 </div>
             </div>
             <div class="row">
                 <div class="small-12 columns">
-                    <p>Your request for a call to discuss your RRSP has been received. An Investors Group Consultant will be in touch soon.</p> </div>
+                    <p>Your request for a call to discuss your RRSP has been received. An Investors Group Consultant
+                        will be in touch soon.</p></div>
             </div>
             <div class="row text-center">
                 <div class="small-10 small-push-1 medium-4 medium-push-4 columns">
