@@ -130,12 +130,10 @@
         url: callRequestEndpoint,
         data: data
       }).success(function (msg) {
-        console.log(msg);
         showSuccessModal();
         $(formMarkupSelector).removeClass('submitting');
       })
         .error(function (msg) {
-          console.log(msg);
           $(formSelector).addClass('server-error');
           $(formMarkupSelector).removeClass('submitting');
           ScrollMan.to($('#server-error'));
