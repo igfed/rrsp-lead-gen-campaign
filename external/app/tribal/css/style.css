@@ -172,7 +172,7 @@ body.wc .throbber {
 
 body.wc .call-request-form {
 	margin: 0 auto;
-	max-width: 120rem;
+	max-width: 90rem;
 }
 
 body.wc .call-request-form label#currentClient-error {
@@ -765,6 +765,7 @@ article:not(.geo-invalid) .geo-unavailable {
 	background: #fff;
 	width: 180px;
 }
+
 
 #callForm hr {
 	border-color: #777;

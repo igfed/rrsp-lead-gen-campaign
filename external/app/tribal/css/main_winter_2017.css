@@ -1493,6 +1493,7 @@ td, th {
 	content: "\e012"
 
 }
+
 .glyphicon-ok:before {
 	content: "\e013"
 }
@@ -23503,12 +23504,71 @@ body {
 	position: relative;
 	overflow: visible;
 	max-width: 1200px;
-	margin: 0 auto
+	margin: 0 auto;
+}
+
+.area-l2.section.records .records-container .overlay {
+	transition: 0.25s all ease-in;
+}
+
+.area-l2.section.records .records-container .overlay {
+	opacity: 0;
+	position: absolute;
+	z-index: 1001;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.area-l2.section.records .records-container .overlay > p {
+	margin: 46% auto;
+	width: 45%;
+	padding: 5px 0;
+	background: #0ed59a;
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 1.2rem !important;
+	letter-spacing: 1.2px !important;
+	text-transform: uppercase !important;
+	color: #000;
+	border-radius: 5px;
+	font-family: 'Whitney A', 'Whitney B';
+}
+
+@media only screen and (max-width: 1279px) {
+	.area-l2.section.records .records-container .overlay > p {
+		margin: 42% auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	.area-l2.section.records .records-container .overlay > p {
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	.area-l2.section.records .records-container .overlay > p {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	.area-l2.section.records .records-container .overlay > p {
+		width: 85%;
+	}
+}
+
+.area-l2.section.records .records-container .record-item-inner:hover > .overlay {
+	opacity: 1;
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1150px) {
 	.area-l2.section.records, .report-modal .area-l2.records.container {
-		padding: 5.65em 8.2%  5.65em 8.2%
+		padding: 5.65em 8.2% 5.65em 8.2%
 	}
 }
 
@@ -23525,7 +23585,6 @@ body {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	opacity: 0.65;
 	width: 50%
 }
 
@@ -23625,17 +23684,17 @@ body {
 	opacity: 1.0
 }
 
-.area-l2.section.records .records-list .record-item.selected > .record-item-inner:before, .report-modal .area-l2.records.container .records-list .record-item.selected > .record-item-inner:before, .area-l2.section.records .records-list .record-item:hover > .record-item-inner:before, .report-modal .area-l2.records.container .records-list .record-item:hover > .record-item-inner:before {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	content: '';
-	margin: -5px;
-	border: 3px solid #0ed59a;
-	border-radius: 3px
-}
+/*.area-l2.section.records .records-list .record-item.selected > .record-item-inner:before, .report-modal .area-l2.records.container .records-list .record-item.selected > .record-item-inner:before, .area-l2.section.records .records-list .record-item:hover > .record-item-inner:before, .report-modal .area-l2.records.container .records-list .record-item:hover > .record-item-inner:before {*/
+/*position: absolute;*/
+/*top: 0;*/
+/*right: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*content: '';*/
+/*margin: -5px;*/
+/*border: 3px solid #0ed59a;*/
+/*border-radius: 3px*/
+/*}*/
 
 .area-l2.section.records .modal-container, .report-modal .area-l2.records.container .modal-container {
 	position: fixed;
@@ -23866,7 +23925,9 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 }
 
 .area-l2.section.retirement-cta, .report-modal .area-l2.retirement-cta.container {
-	background: white
+	background: white;
+	max-width: 1460px;
+	margin: 0 auto;
 }
 
 .retirement-cta-container h4 {
@@ -23954,7 +24015,7 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content p, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content p {
-		max-width: 85%;
+		max-width: 90%;
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content .outline-btn, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content .outline-btn {
@@ -25763,11 +25824,8 @@ body[data-lang=fr] .intro-l2.section .copy-wrap-video .headline, body[data-lang=
 	color: #999999
 }
 
-
-
 /*Styles added Jan 6th, 2017*/
 /*Dennis Erny*/
-
 
 .video-spinner {
 	background: #0c273c url("../images/rrsp/spinner.gif") center center no-repeat;
@@ -26019,6 +26077,5 @@ html {
 	height: 200px !important;
 	margin: 50px auto 5px auto !important;
 }
-
 
 /*# sourceMappingURL=main.css.map */
