@@ -59,7 +59,7 @@
           }
         }
 
-        requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join(): "";
+        requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join() : "";
 
         var optIn = formData.filter(function (field) {
           return field.name === 'opt_in';
@@ -143,54 +143,59 @@
 
   function GeoLocationModule(serviceDependency) {
     var acceptedCities = [
-    'toronto',
-    'windsor',
-    'richmond hill',
-    'dartmouth',
-    'calgary',
-    'edmonton',
-    'victoria',
-    'montreal',
-    'montréal',
-    'saskatoon',
-    'quebec city',
-    'ville de québec'
-    ]
+      'toronto',
+      'windsor',
+      'richmond hill',
+      'dartmouth',
+      'calgary',
+      'edmonton',
+      'victoria',
+      'montreal',
+      'montréal',
+      'saskatoon',
+      'quebec city',
+      'ville de québec'
+    ];
     var $ctaPaneRequest = $('.retirement-cta-pane--request');
+    var $ctaPaneFaa = $('.retirement-cta-pane--faa');
+
     getCoordinates();
 
     // Get current location
     function getCoordinates() {
-      if (!navigator.geolocation){
+      if (!navigator.geolocation) {
         return;
       }
       function success(position) {
         // If successful turn that lat and long in to an address
         var response = [];
-        $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + ","+ position.coords.longitude +"&key=AIzaSyB-owYhB99ivBbt0oNphrTei2YHN73BvSw", function(data){
+        $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + "," + position.coords.longitude + "&key=AIzaSyB-owYhB99ivBbt0oNphrTei2YHN73BvSw", function (data) {
           if (data.status === "OK") {
             response = data.results[0].address_components;
             // Search those address pieces for a city name
             var cities = returnCityNames(response);
-            for (var i=0; i<cities.length; i++) {
+            for (var i = 0; i < cities.length; i++) {
               var city = cities[i].toLowerCase();
               // If the city name is from the approved list show the CTA request pane
-              if ( isAcceptedCity(city) ) {
+              if (isAcceptedCity(city)) {
                 $ctaPaneRequest.show();
+                $ctaPaneFaa.removeClass('pl-25');
               }
             }
           }
         });
       }
+
       function error() {
         console.log('Error with geolocation');
       }
+
       navigator.geolocation.getCurrentPosition(success, error);
     }
 
     function isAcceptedCity(city) {
       var result = false;
-      for (var i=0; i<acceptedCities.length; i++) {
+      for (var i = 0; i < acceptedCities.length; i++) {
         if (city === acceptedCities[i]) {
           result = true;
         }
@@ -200,8 +205,8 @@
 
     function returnCityNames(address) {
       var result = [];
-      for (var i=0; i<address.length; i++) {
-        for (var j=0; j<address[i].types.length; j++) {
+      for (var i = 0; i < address.length; i++) {
+        for (var j = 0; j < address[i].types.length; j++) {
           if (address[i].types[j] === "locality") {
             result.push(address[i].long_name);
           }

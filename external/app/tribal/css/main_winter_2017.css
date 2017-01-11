@@ -23869,6 +23869,16 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 	background: white
 }
 
+.retirement-cta-container h4 {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 3.6rem;
+	line-height: 1.2;
+	text-transform: none;
+	text-align: left;
+	font-family: "whitney_lightregular";
+}
+
 .area-l2.section.retirement-cta .retirement-cta-container, .report-modal .area-l2.retirement-cta.container .retirement-cta-container {
 	display: block;
 	width: 100%
@@ -23920,7 +23930,7 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 }
 
 .area-l2.section.retirement-cta .retirement-cta-pane-content p, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content p {
-	font-size: 2em;
+	font-size: 1.8rem;
 	line-height: 1.4;
 	text-align: left
 }
@@ -23944,8 +23954,7 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content p, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content p {
-		min-height: 100px;
-		max-width: 80%;
+		max-width: 85%;
 	}
 
 	.area-l2.section.retirement-cta .retirement-cta-pane-content .outline-btn, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane-content .outline-btn {
@@ -23960,6 +23969,16 @@ body[data-lang=fr] .area-l2.section.records .modal-content .title, body[data-lan
 .area-l2.section.retirement-cta .retirement-cta-pane--faa .retirement-cta-pane-content .illustration, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane--faa .retirement-cta-pane-content .illustration {
 	background-color: #2B4D73;
 	background-image: url(../images/ill-contact.png)
+}
+
+.area-l2.section.retirement-cta .retirement-cta-pane--faa.pl-25 {
+	padding-left: 25%;
+}
+
+@media only screen and (max-width: 1023px) {
+	.area-l2.section.retirement-cta .retirement-cta-pane--faa.pl-25 {
+		padding-left: 0;
+	}
 }
 
 .area-l2.section.retirement-cta .retirement-cta-pane--request .retirement-cta-pane-content .illustration, .report-modal .area-l2.retirement-cta.container .retirement-cta-pane--request .retirement-cta-pane-content .illustration {
