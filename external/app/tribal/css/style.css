@@ -807,4 +807,45 @@ article:not(.geo-invalid) .geo-unavailable {
 	display: inline-block;
 }
 
+@media only screen and (max-width: 480px) {
+	.l2-section__tips--wpr {
+		height: 260px;
+	}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.l2-section__tips--wpr {
+		height: 290px !important;
+		margin: 10px auto 65px auto !important;
+	}
+
+	.l2-section__tips--wpr .slick-dots {
+		margin: 40px auto 10px auto !important;
+		text-align: center;
+	}
+
+	.area-l2.section.tips > .section.initial-view {
+		padding: 0;
+	}
+
+	.area-l2.section.tips {
+		padding: 0 15px !important;
+	}
+
+	article .expand-article-toggle .row  h2 {
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 250px;
+	}
+
+	.retirement-cta-pane-content {
+		padding: 0 15px !important;
+	}
+
+	.area-l2.section.records {
+		margin-top: -60px;
+	}
+}
+
 /*# sourceMappingURL=style.css.map */
