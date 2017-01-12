@@ -229,7 +229,7 @@ function onTemplateLoad(experienceID) {
 function onTemplateReady(evt) {
   $('.video-spinner-container').hide();
   $('.js-video-play').show();
-  $('.js-video-play-btn').on('click',function(){
+  $('.js-video-play-btn').on('click',function(event){
 
     event.preventDefault ? event.preventDefault() : (event.returnValue = false);
     $('.js-video-play').hide();
