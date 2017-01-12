@@ -273,7 +273,11 @@ body.wc .call-request-form label.error:after {
 	right: 8px;
 }
 
-body.wc .call-request-form label#current_client-error:after {
+body.wc .call-request-form label#current_client-error:after, body.wc .call-request-form label#opt_in-error:after {
+	display: none;
+}
+
+body.wc .call-request-form label.valid:after {
 	display: none;
 }
 
@@ -792,6 +796,15 @@ article:not(.geo-invalid) .geo-unavailable {
 #callForm #current_client-error {
 	position: absolute !important;
 	top: 70px;
+}
+
+.js-geo {
+	display: none;
+}
+
+.js-geo.active {
+	margin-right: 45px;
+	display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

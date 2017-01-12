@@ -60,12 +60,7 @@
         }
 
         requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join() : "";
-
-        var optIn = formData.filter(function (field) {
-          return field.name === 'opt_in';
-        })[0];
-
-        requestData.opt_in = (optIn) ? 'Yes' : 'No';
+        requestData.opt_in = "Yes";
         requestData.language = $('body').attr('data-lang').toUpperCase();
         submitCallRequest(requestData);
       }
@@ -90,6 +85,8 @@
         errorPlacement: function (label, element) {
           if (element.attr("name") === "current_client") {
             label.insertBefore(element);
+          } else if (element.attr("name") === "opt_in") {
+            label.insertAfter("#optIn + span");
           } else {
             label.insertAfter(element); // standard behaviour
           }
@@ -104,12 +101,15 @@
             cdnPostal: true
           },
           firstname: {
+            required: true,
             maxlength: 100
           },
           lastname: {
+            required: true,
             maxlength: 100
           },
           email: {
+            required: true,
             maxlength: 100
           }
         }
@@ -180,6 +180,7 @@
               if (isAcceptedCity(city)) {
                 $ctaPaneRequest.show();
                 $ctaPaneFaa.removeClass('pl-25');
+                // $('.js-geo').addClass('active');
               }
             }
           }
