@@ -1,85 +1,65 @@
-<html lang="en" ng-app="quizApp">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- ensure the above line appears in the first 512 bytes -->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+    <title>Request A Call | Investors Group</title>
 
-    <title>Retirement</title>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:locale:alternate" content="fr_FR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Home | Investors Group"/>
+    <meta property="og:description"
+          content="Life is rich and varied. Your financial plan should be, too. We focus on six areas of your financial life to help you get more out of your money, so you can get more out of life."/>
+    <meta property="og:url" content="http://www.investorsgroup.com/en/default.aspx"/>
+    <meta property="og:site_name" content="Investors Group"/>
 
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="fr_FR">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Retirement | Investors Group">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="http://www.investorsgroup.com/">
-    <meta property="og:site_name" content="Investors Group">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description"
+          content="Life is rich and varied. Your financial plan should be, too. We focus on six areas of your financial life to help you get more out of your money, so you can get more out of life."/>
+    <meta name="twitter:title" content="Home | Investors Group"/>
+    <meta name="twitter:site" content="@Investors_Group"/>
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:title" content="Retirement | Investors Group">
-    <meta name="twitter:site" content="@Investors_Group">
+    <meta name="twitter:creator" content="@Investors_Group"/>
+    <meta name="pageType" content="corporateContent"/>
+    <meta name="description"
+          content="Life is rich and varied. Your financial plan should be, too. We focus on six areas of your financial life to help you get more out of your money, so you can get more out of life."/>
+    <meta name="keywords" content="insurance investment mortgage retirement tax-planning estate-planning"/>
+    <meta name="author" content="Investors Group"/>
 
-    <meta name="twitter:creator" content="@Investors_Group">
-    <meta name="pageType" content="corporateContent">
-    <meta name="description" content="">
-    <meta name="keywords" content="retirement">
-    <meta name="author" content="Investors Group">
-
-    <link rel="shortcut icon" href="/logos/favicon1.ico">
+    <link rel="shortcut icon" href="/logos/favicon1.ico"/>
     <link rel="apple-touch-icon" href="/logos/Icon-60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/logos/Icon-76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/logos/Icon-602x.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/logos/Icon-762x.png">
-    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <link rel="apple-touch-icon" sizes="76x76" href="/logos/Icon-76.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/logos/Icon-602x.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/logos/Icon-762x.png"/>
     <script>
-      var LANG = "en";
+      var LANG = "fr";
 
       <!-- published mode -->
-      var QUIZ_JSON = "/external/app/tribal/data/QuizData-en.json";
+      //      var QUIZ_JSON = "/external/app/tribal/data/QuizData-en.json";
 
     </script>
 
-    <!--<link href="//cloud.typography.com/7648574/725288/css/fonts.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6736334/7156772/css/fonts.css" /> -->
     <link rel="stylesheet" href="external/app/tribal/css/foundation.css">
     <link rel="stylesheet" href="external/app/tribal/css/main_winter_2017.css">
     <link rel="stylesheet" href="external/app/tribal/css/warningbox.css">
     <link rel="stylesheet" href="external/app/tribal/css/style.css">
-    <script src="/en/js/corp/modernizr.js"></script>
 
     <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-2868753-2', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
+      //     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      //         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      //         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      //         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      //     ga('create', 'UA-2868753-2', 'auto');
+      //     ga('require', 'displayfeatures');
+      //     ga('send', 'pageview');
     </script>
 
 
-    <meta class="foundation-data-attribute-namespace">
-    <meta class="foundation-mq-xxlarge">
-    <meta class="foundation-mq-xlarge">
-    <meta class="foundation-mq-large">
-    <meta class="foundation-mq-medium">
-    <meta class="foundation-mq-small">
-    <style></style>
-    <meta class="foundation-mq-topbar">
-    <script type="text/javascript" async=""
-            src="//cdn.mouseflow.com/projects/f9765a96-1b6f-4ce8-8949-08df0fbafe20.js"></script>
 </head>
-<body class="l2 en" data-lang="en" data-areaid="retirement" data-quiz="external/app/tribal/data/QuizData-en.json">
+<body class="wc" data-lang="en">
 <div class="wpr">
     <div class="header-wrap">
         <!-- Utility menu -->
@@ -313,692 +293,181 @@
         </div>
     </div>
 
-    <div class="intro-l2 section video" data-illustrationid="L2--retirement" data-illustrationid-disabled="retirement">
-        <div class="copy-wrap-video">
-            <div class="headline">Retirement. <span>Are RRSPs enough?</span></div>
-            <div class="sub">A comprehensive plan considers all aspects of your life. Watch the video below to find out
-                how great retirement can sound.
-            </div>
-        </div>
-        <div class="morebtn" data-tracking-label="MainBody_Learn More CTA">
-            <!--
-                    learn more
-                    <div class='line-arrow line-arrow--down'></div>
-            -->
+    <div class="call-request-form">
+        <div class="screen">
+            <div class="throbber"></div>
         </div>
 
-        <div class="video-container">
-            <div class="video-spinner-container">
-                <div class="video-spinner"></div>
-            </div>
-            <a href="#" title="video" class="js-video-play-btn">
-                <div class="video-image js-video-play"></div>
-            </a>
-            <div class="video-container-responsive">
-
-                <!-- Start of Brightcove Player -->
-                <div style="display:none">
-
-                </div>
-
-                <!--
-                By use of this code snippet, I agree to the Brightcove Publisher T and C
-                found at https://accounts.brightcove.com/en/terms-and-conditions/.
-                -->
-
-                <script language="JavaScript" type="text/javascript"
-                        src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js">
-                </script>
-
-                <object id="myExperience4692154245001" class="BrightcoveExperience">
-                    <param name="htmlFallback" value="true">
-                    <param name="bgcolor" value="#FFFFFF ">
-                    <param name="width" value="100%">
-                    <param name="height" value="100%">
-                    <param name="playerID" value="4721138328001">
-                    <param name="playerKey" value="AQ~~,AAADjafw_sk~,383Vbs13HVAXHnb_e-BAb9SMMY6kMHnV">
-                    <param name="isVid" value="true">
-                    <param name="isUI" value="true">
-                    <param name="dynamicStreaming" value="true">
-                    <param name="wmode" value="opaque">
-                    <param name="@videoPlayer" value="4727877521001">
-                    <param name="includeAPI" value="true">
-                    <param name="templateLoadHandler" value="onTemplateLoad">
-                    <param name="templateReadyHandler" value="onTemplateReady">
-                    <param name="secureConnections" value="true"/>
-                    <param name="secureHTMLConnections" value="true"/>
-                </object>
-
-                <!--
-                This script tag will cause the Brightcove Players defined above it to be created as soon
-                 as the line is read by the browser. If you wish to have the player instantiated only after
-                 the rest of the HTML is processed and the page load is complete, remove the line.
-                 -->
-                <script type="text/javascript">brightcove.createExperiences();</script>
-
-                <!-- End of Brightcove Player -->
-            </div>
-            <a href="/external/app/tribal/pdf/invest-in-life-Transcription-EN.pdf" class="transcript-link"
-               target="_blank">Transcript</a>
-        </div>
-
-    </div>
-
-    <div class="area-l2 section tips" data-areaid="retirement">
-
-        <article class="section initial-view">
-            <h2>Top 10 RRSP tips</h2>
-            <p class="sub-title">Whether retirement is five years or 25 years away, the best strategy for reaching any
-                goal is to have a plan - and these important RRSP strategies can help you get started.</p>
-            <div class="row">
-                <div class="small-12 medium-6 columns tip">
-                    <h3>Tip Three</h3>
-                    <h4>Give yourself a raise</h4>
-                    <p>File a T1213 form to the Canada Revenue Agency (CRA), and you could potentially reduce the amount
-                        of income your employer withholds from your paycheques, putting more money in your pocket for
-                        your immediate use – like your RRSP.</p>
-                </div>
-
-                <div class="small-12 medium-6 columns tip">
-                    <h3>Tip Four</h3>
-                    <h4>Tax planning for two through spousal RRSP's</h4>
-                    <p>A spousal RRSP is an RRSP for the benefit of one spouse, but contributions are made, and
-                        deducted, by the other spouse. Spousal RRSPs are a good strategy if you expect one spouse to be
-                        in a lower tax bracket in retirement because they provide the benefit of balancing retirement
-                        income.</p>
-                </div>
-            </div>
-
-            <div class="expand-article-toggle">
-                <div class="mask"></div>
-                <div class="mask"></div>
+        <form id="callForm" name="callForm" method="get" action="" novalidate="novalidate">
+            <fieldset>
                 <div class="row">
                     <div class="small-12 columns">
-                        <h2>Expand to read full article
-                            <svg viewBox="0 0 25 25" height="20px" width="20px" y="0px" x="0px"
-                                 preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M 19 10.9L 17.6 9.45 12.5 14.6 7.4 9.45 5.95 10.9 12.5 17.4 19 10.9 Z"
-                                      stroke="none" fill="#0C273C"/>
-                                <g transform="matrix( 1, 0, 0, 1, 0,0) ">
-                                    <use xlink:href="#Layer2_0_FILL"/>
-                                </g>
-                            </svg>
-                        </h2>
+                        <legend>Request a call</legend>
                     </div>
                 </div>
-            </div>
-
-            <div class="expanded-article-content" aria-hidden="true">
                 <div class="row">
-                    <div class="small-12 medium-6 columns tip">
-                        <h3>Tip Five</h3>
-                        <h4>Make tax-efficient deduction decisions</h4>
-                        <p>Although it may seem counter-intuitive, if you expect to have a significantly higher income
-                            in coming years, you can defer taking the tax deduction this year. You can make an RRSP
-                            contribution now and not claim the deduction until you’re in a higher tax bracket.</p>
+                    <div class="small-8 columns end">
+                        <p>If you would like to speak with an Investors Group Advisor about your retirement, please
+                            complete the fields below, and click “Send Request”.</p>
+                    </div>
+                </div>
+                <div class="row server-error" id="server-error">
+                    <p class="error">There was an error with your request; please review your information and try
+                        again.</p>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-6 columns">
+                        <label for="firstname" class="screen-reader-only">Your first name</label>
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="First name" id="firstname" name="firstname"
+                                   type="text"
+                                   minlength="2" required="required" aria-required="true"
+                                   style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <label for="lastname" class="screen-reader-only">Your last name</label>
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Last name" id="lastname" name="lastname" type="text"
+                                   minlength="2" required="required" aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-4 columns">
+                        <label for="phone" class="screen-reader-only">Your phone number</label>
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Phone number" id="phone" name="phone" type="tel"
+                                   required="required" aria-required="true">
+                        </div>
+                    </div>
+
+                    <div class="small-12 medium-2 columns">
+                        <label for="extension" class="screen-reader-only">Ext. (optional)</label>
+                        <input spellcheck="false" placeholder="Ext. (optional)" id="extension" name="extension"
+                               type="text">
+                    </div>
+
+                    <div class="small-12 medium-6 columns">
+                        <label for="email" class="screen-reader-only">Your email address</label>
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Email" id="email" name="email" type="email"
+                                   required="required"
+                                   aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-6 columns end">
+                        <label for="postal" class="screen-reader-only">Your postal code</label>
+                        <div class="form-group">
+                            <input spellcheck="false" placeholder="Postal code" id="postal_code" name="postal_code"
+                                   type="text"
+                                   required="required" aria-required="true">
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="small-12 columns pdf">
-                        <p>Learn more about getting the most of your RRSP.</p>
-                        <a href="external/app/tribal/pdf/MP1313_O_4723641_394052.pdf" target="_blank"
-                           class="outline-btn">View Top 10 Tips</a>
-                    </div>
-
-                </div>
-            </div>
-        </article>
-    </div>
-
-    <div class="area-l2 section" data-areaid="retirement">
-        <div class="banner">
-            <div class="wrap">
-                <div class="illustration" data-illustrationid="L2--retirement"></div>
-            </div>
-            <div class="header">Click on the album covers below to learn how our six areas of expertise can help with
-                your retirement.
-            </div>
-        </div>
-
-    </div>
-
-    <div class="area-l2 section records" data-areaid="retirement">
-        <div class="records-container">
-            <div class="records-list">
-                <div class="record-item investments" data-itemid="investments">
-                    <div class="modal-content">
-                        <div class="title">Investments</div>
-                        <div class="content"><p>A great way to add savings to your retirement is incorporating a
-                            Tax-Free Savings Account (TFSA) into your plan. This type of account allows your investments
-                            to grow without you having to pay any tax on that growth. If you haven’t taken advantage of
-                            a TFSA yet, as of 2017, you are allowed to contribute up to $52,000 if you were 18 as of
-                            2009.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html"  class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"  class="cta underline-link">Find an advisor</a>
+                    <div class="small-12 columns topics">
+                        <div class="topics-line-break">
+                            <h4>Topics to Discuss</h4>
                         </div>
-                    </div>
 
-                    <a href="#" class="record-item-inner investments">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        investments
-                    </a>
-                </div>
-                <div class="record-item tax-planning" data-itemid="tax-planning">
-                    <a href="#" class="record-item-inner tax-planning">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        tax-planning
-                    </a>
-                    <div class="modal-content">
-                        <div class="title">Tax Planning</div>
-                        <div class="content"><p>Living the retirement lifestyle you want means making the most of your
-                            retirement income over a longer period of time. We can help you establish effective tax
-                            planning and tax management strategies, aimed at maximizing your retirement income by
-                            reducing taxes and potential OAS ‘clawback’ pressures.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html"  class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"  class="cta underline-link">Find an advisor</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="record-item mortgage" data-itemid="mortgage">
-                    <a href="#" class="record-item-inner mortgage">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        mortgage
-                    </a>
-                    <div class="modal-content">
-                        <div class="title">Mortgage</div>
-                        <div class="content"><p>Will you have a mortgage when you retire? Paying it off before you
-                            retire may not be as important as you think. In a low interest rate environment, carrying a
-                            mortgage into retirement may be the better option. Talk to us about which option is the best
-                            for your situation, so you can get the most out of your retirement.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html"  class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"  class="cta underline-link">Get mortgage advice</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="record-item insurance" data-itemid="insurance">
-                    <a href="#" class="record-item-inner insurance">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        insurance
-                    </a>
-                    <div class="modal-content">
-                        <div class="title">Insurance</div>
-                        <div class="content"><p>Spending years building a sound retirement could all be for not if you
-                            don’t protect it. Our advisors help you pick the right insurance options for your family,
-                            lifestyle, and retirement plans so you get coverage that delivers the best value and ensures
-                            your future is protected.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html"  class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"  class="cta underline-link">Find an advisor</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="record-item estate-planning" data-itemid="estate-planning">
-                    <a href="#" class="record-item-inner estate-planning">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        estate-planning
-                    </a>
-                    <div class="modal-content">
-                        <div class="title">Estate Planning</div>
-                        <div class="content"><p>When planning for retirement, it’s easy to avoid thinking about the end
-                            of our lives and how our legacy is passed on. Canadians typically worry about probate fees,
-                            particularly when it’s income tax they need to be prepared for. We can help you think ahead
-                            and establish an estate plan now to ensure your estate is distributed in accordance with
-                            your intentions.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html" class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"
-                               class="cta underline-link">Find an advisor</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="record-item retirement" data-itemid="retirement">
-                    <a href="#" class="record-item-inner retirement">
-                        <span class="overlay"><p>Click to expand</p></span>
-                        retirement
-                    </a>
-                    <div class="modal-content">
-                        <div class="title">Retirement</div>
-                        <div class="content"><p>RRSPs are the foundation of retirement planning. There are ways we can
-                            help you maximize their benefits. We’ll help you set up automatic monthly contributions or
-                            an RRSP loan to take advantage of your contribution room. This could help you increase the
-                            size of your tax refund, and also have more tax-deferred money growing inside your RRSP.</p>
-                            <p>Remember, you have until March 1st of this year to make your contributions.</p>
-                            <p>Let’s talk about your options.</p>
-                            <a href="request-a-call.html" class="cta underline-link js-geo">Request a call</a>
-                            <a href="https://www.investorsgroup.com/external/search/index.html"
-                               class="cta underline-link">Find an advisor</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="modal-container" style="display: none;">
-                <div class="modal-inner">
-                    <div class="modal-content"></div>
-                    <div class="modal-nav modal-nav--prev" data-direction="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 38">
-                            <path fill="none" stroke="#4DBD92" stroke-width="3"
-                                  d="M18.87 36.36L2.25 19.06l16.62-17.3"></path>
-                        </svg>
-                    </div>
-                    <div class="modal-nav modal-nav--next" data-direction="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 38">
-                            <path fill="none" stroke="#4DBD92" stroke-width="3"
-                                  d="M1.25 1.76l16.62 17.3-16.62 17.3"></path>
-                        </svg>
-                    </div>
-                    <div class="modal-cancel">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 13 40 40">
-                            <circle fill="none" stroke="#373737" stroke-width="3" cx="20" cy="33" r="18.5"></circle>
-                            <path fill="none" stroke="#373737" stroke-width="3" stroke-miterlimit="10"
-                                  d="M10.102 42.898l19.796-19.796m-19.796 0l19.796 19.796"></path>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="area-l2 section retirement-cta" data-areaid="retirement">
-        <div class="retirement-cta-container">
-            <div class="retirement-cta-pane retirement-cta-pane--request" style="display: none;">
-                <div class="retirement-cta-pane-content">
-                    <div class="illustration"></div>
-                    <h4>Request a call</h4>
-                    <p>Have questions about your RRSP? Request a call and we’ll be in touch.</p>
-                    <a href="request-a-call.html" class="outline-btn">Request a call</a>
-                </div>
-            </div>
-            <div class="retirement-cta-pane retirement-cta-pane--faa pl-25">
-                <div class="retirement-cta-pane-content">
-                    <div class="illustration"></div>
-                    <h4>Find an advisor</h4>
-                    <p>Maximizing your RRSP is vital to your retirement plan. Our advisors can help.</p>
-                    <a href="https://www.investorsgroup.com/external/search/index.html" class="outline-btn">Find an
-                        advisor</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="area-l2 section highlights" data-areaid="retirement">
-        <h3 class="text-center tp_21a">How we can help</h3>
-        <ul class="highlights">
-            <li>
-                <div class="illustration" data-illustrationid="HL--retirement-A"></div>
-                <div class="header">Regular contributions</div>
-                <p><i>When</i> you start contributing to an RRSP can be as important as <i>how</i> much you
-                    contribute.
-                    Our advisors will help you take advantage of the benefits of long-term compound interest.</p>
-                <a href="/en/pac-now-for-a-more-comfortable-retirement" class="underline-link"
-                   onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                   data-tracking-label="Click_Regular_contributions_EventPage:Investment">learn more</a>
-            </li>
-            <li>
-                <div class="illustration" data-illustrationid="HL--retirement-B"></div>
-                <div class="header">Build your savings</div>
-                <p>Determine how to maximize your RRSP and TSFA contributions and other investment options, so
-                    you’re
-                    equipped when the time comes.</p>
-                <a href="/en/is-it-better-to-contribute-to-investments-held-within-an-rrsp-or-a-tfsa"
-                   class="underline-link" onclick="igTrack.inline(this)"
-                   data-tracking-label="Click_Build_your_savings_EventPage:Retirement"
-                   data-tracking-category="Consumer Engagement">learn more</a>
-            </li>
-            <li>
-                <div class="illustration" data-illustrationid="HL--retirement-C"></div>
-                <div class="header">Manage multiple income streams</div>
-                <p>Retirement Paycheque™ is a way for you to consolidate and keep track of your pensions, investments, insurance and savings, all in one place.</p>
-                <a href="/en/media-room/articles/retirement-planning/paying-yourself-can-be-complicated-after-you-retire"
-                   class="underline-link" onclick="igTrack.inline(this)"
-                   data-tracking-label="Click_Manage_multiple_income_streams_EventPage:Retirement"
-                   data-tracking-category="Consumer Engagement">learn more</a>
-            </li>
-
-        </ul>
-    </div>
-
-    <style>
-        /* tips starts*/
-        .l2-section__wpr {
-            margin: 0 auto;
-        }
-
-        .l2-section__wpr--heading {
-            text-align: center;
-        }
-
-        .section.l2-section__tips {
-            background: #eff5f3;
-            position: relative;
-        }
-
-        .carousel-prev, .carousel-next {
-            position: absolute;
-            top: 20px;
-            cursor: pointer;
-        }
-
-        .carousel-prev {
-            left: -5%;
-        }
-
-        .carousel-next {
-            right: -5%;
-        }
-
-        .l2-section__tips--wpr {
-            width: 100%;
-            margin: 80px auto 65px auto;
-            position: relative;
-        }
-
-        .l2-section__tips--wpr .slick-dots li.slick-active button {
-            font-size: 0rem;
-            width: 13px;
-            height: 13px;
-            border: 2px solid #687a87;
-            background-color: #687a87;
-            border-radius: 10px;
-        }
-
-        .l2-section__tips--wpr .slick-dots li button {
-            font-size: 0;
-            width: 13px;
-            height: 13px;
-            border: 2px solid #687a87;
-            background: none;
-            border-radius: 10px;
-            margin-left: 12px;
-        }
-
-        .l2-section__tips--wpr .slick-dots li.slick-active button {
-            opacity: 1;
-        }
-
-        .l2-section__tips--wpr .slick-dots li {
-            display: inline-block;
-        }
-
-        .l2-section__tips--wpr .slick-dots {
-            display: block;
-            text-align: center;
-            margin: 60px auto 0 auto;
-        }
-
-        .tp_28a {
-            font-family: "whitney_lightregular";
-            font-size: 2.2rem;
-            line-height: 3.2rem;
-            color: "#0D263C";
-        }
-
-        .slick-wrap {
-            padding-left: 3.5em;
-            padding-right: 3.5em;
-        }
-
-        .l2-section__tips--slide {
-            text-align: center;
-        }
-
-        /* tips ends*/
-
-        @media only screen and (min-width: 768px) {
-            .l2-section__tips--slide {
-                text-align: left;
-            }
-        }
-
-        @media only screen and (min-width: 1160px) {
-            .l2-section__wpr {
-                max-width: 1160px;
-            }
-
-            .l2-section-wpr__intro {
-                max-width: 720px;
-            }
-
-            /* Feature section start*/
-            .l2-section__feature--container {
-                width: 720px;
-                margin: 65px auto 0 auto;
-            }
-
-            .l2-section__feature--col {
-                width: 240px;
-                min-height: 180px;
-                float: left;
-            }
-
-            .l2-section__feature--col h6 {
-                margin: 30px auto 0 auto;
-                border-bottom: 1px solid #dde4e6;
-                max-width: 175px;
-                text-align: center;
-            }
-
-            .l2-section__feature--col span {
-                display: inline-block;
-                height: 87px;
-                line-height: 87px;
-            }
-
-            .l2-section__feature--col p {
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            .u-border-r-grey {
-                border-right: 1px solid #c1cbd0;
-            }
-
-            .l2-section__wpr--heading h3 {
-                margin-bottom: 60px;
-            }
-
-            .l2-section__wpr--heading p {
-                vertical-align: middle;
-            }
-
-            .l2-section__feature--btn {
-                max-width: 240px;
-                margin: 75px auto 0px auto;
-            }
-
-            /* Feature section end*/
-            /* tips starts*/
-            .l2-section__tips--wpr {
-                width: 690px;
-                margin: 80px auto 65px auto;
-                position: relative;
-            }
-
-            .l2-section__tips--slide {
-
-            }
-
-            .carousel-prev {
-                left: -90px;
-            }
-
-            .carousel-next {
-                right: -90px;
-            }
-
-            /* tips ends*/
-        }
-
-        .display-none {
-            display: none;
-        }
-
-        #slide2 {
-            display: block !important
-        }
-    </style>
-
-    <div class="section l2-section__tips">
-        <div class="l2-section__wpr">
-            <div class="js-slick-wrap slick-wrap l2-section__tips--wpr">
-                <div class="l2-section__tips--slide tp_28a" id="slide1">
-                    If your company has a pension plan or group RRSP that matches contributions, make sure you do so.
-                    It’s free money.
-                </div>
-                <div class="l2-section__tips--slide tp_28a" id="slide2">
-                    A 25-year-old who begins with a $2,000 RRSP contribution, and adds $2,000 each year will have
-                    $330,095 by the time they are 65, assuming compound annual growth of six per cent.
-                </div>
-                <div class="l2-section__tips--slide tp_28a" id="slide3">
-                    You won't pay any tax on investment earnings as long as they stay in your RRSP. This tax-free
-                    compounding allows your savings to grow faster.
-                </div>
-                <div class="l2-section__tips--slide tp_28a" id="slide4">
-                    With retirement 25+ years away, short-term market predictions shouldn’t influence your long-term
-                    investment plan. Stay focused on the plan you put in place.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <style>
-        .more {
-            background: #ffffff;
-            padding-top: 50px;
-            padding-bottom: 65px;
-            padding-left: 6.2%;
-            padding-right: 6.2%;
-        }
-
-        .more .excerpt {
-            height: auto !important;
-        }
-
-        .more .slick-slide {
-            height: auto !important
-        }
-
-        .slick-track {
-            width: 100%
-        }
-
-        .slick-slide img {
-            width: 100%;
-        }
-
-        .more .homepage-carousel .carousel-slides {
-            padding: 0px;
-            margin: 40px auto;
-            width: 100%;
-        }
-
-        .more > h2 {
-            margin: auto;
-            text-align: center;
-        }
-
-        #slide2 {
-            display: none;
-        }
-
-        @media only screen and (min-width: 768px) {
-
-            .more {
-                padding-left: 8.2%;
-                padding-right: 8.2%;
-            }
-
-            .more .homepage-carousel .carousel-slides {
-                padding: 0px;
-                margin: 98px 4% 0;
-                width: 42%;
-            }
-
-            .more > h2 {
-                margin: 0px;
-                text-align: left;
-            }
-
-            #slide2 {
-                display: block;
-            }
-        }
-
-        /*@media only screen and (min-width: 1100px) {
-
-            .more .homepage-carousel .carousel-slides {
-                padding: 0px;
-                margin: 98px 38px 0;
-                width: 100%;
-                min-height: 100% !important;
-            }
-        }*/
-    </style>
-
-    <div id="more" class="more section">
-        <h2>trending advice &amp; stories</h2>
-        <div class="homepage-carousel slick-initialized slick-slider">
-            <div class="slick-list draggable" tabindex="0">
-                <div class="slick-track">
-                    <div class="carousel-slides slick-slide slick-active" id="slide1">
-                        <div class="slide-image">
-                            <a href="http://www.investorsgroup.com/more/en/2014/10/retiring-with-rrifs/"
-                               onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                               data-tracking-label="Trendingadvice&amp;stories_Click_Retiring_with_RRIFs_EventPage:Retirement">
-                                <img src="external/app/tribal/images/l2-more/thepayoffnext.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slide-content">
-                            <h2>
-                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                                   data-tracking-label="Trendingadvice&amp;stories_Click_Retiring_with_RRIFs_EventPage:Retirement"
-                                   href="http://www.investorsgroup.com/more/en/2014/10/retiring-with-rrifs/">Retiring
-                                    with RRIFs</a>
-                            </h2>
-                            <div class="excerpt">
-                                <p>Convert your RRSP into a registered retirement income fund.</p>
+                        <div class="row">
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic1" name="Retirement" type="checkbox">
+                                <label for="topic1">Retirement</label>
                             </div>
-                            <a href="http://www.investorsgroup.com/more/en/2014/10/retiring-with-rrifs/"
-                               onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                               data-tracking-label="Trendingadvice&amp;stories_Click_Retiring_with_RRIFs_EventPage:Retirement"
-                               class="cta underline-link">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-slides slick-slide slick-active" id="slide2">
-                        <div class="slide-image">
-                            <a href="http://www.investorsgroup.com/more/en/2015/10/retirement-keep-income-coming-2/"
-                               onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                               data-tracking-label="Trendingadvice&amp;stories_Click_Retirement:_Keep_Income_Coming_EventPage:Retirement">
-                                <img src="external/app/tribal/images/l2-more/retirementincome.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="slide-content">
-                            <h2>
-                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
-                                   data-tracking-label="Trendingadvice&amp;stories_Click_Retirement:_Keep_Income_Coming_EventPage:Retirement"
-                                   href="http://www.investorsgroup.com/more/en/2015/10/retirement-keep-income-coming-2/">Retirement:
-                                    Keep Income Coming</a>
-                            </h2>
-                            <div class="excerpt">
-                                <p>Your money doesn’t have to dry up after you stop working. Here are some
-                                    suggestions...</p>
+
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic2" name="Investment" type="checkbox">
+                                <label for="topic2">Investment</label>
                             </div>
-                            <a href="http://www.investorsgroup.com/more/en/2015/10/retirement-keep-income-coming-2/"
-                               class="cta underline-link" onclick="igTrack.inline(this)"
-                               data-tracking-category="Consumer Engagement"
-                               data-tracking-label="Trendingadvice&amp;stories_Click_Retirement:_Keep_Income_Coming_EventPage:Retirement">Learn
-                                More</a>
+
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic3" name="Mortgage" type="checkbox">
+                                <label for="topic3">Mortgages</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic4" name="Estate Planning" type="checkbox">
+                                <label for="topic4">Estate Planning</label>
+                            </div>
+
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic5" name="Tax Planning" type="checkbox">
+                                <label for="topic5">Tax Planning</label>
+                            </div>
+
+                            <div class="small-12 medium-4 columns">
+                                <input id="topic6" name="Insurance" type="checkbox">
+                                <label for="topic6">Insurance</label>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <hr/>
+
+                <div class="row">
+                    <div class="small-12 medium-4 columns">
+                        <label>I am currently a client of Investors Group</label>
+                    </div>
+                    <div class="small-4 medium-3 large-2 columns">
+                        <input type="radio" name="current_client" value="yes"
+                               id="currentClientYes" required="required"><label for="currentClientYes">Yes</label>
+                    </div>
+                    <div class="small-4 medium-3 large-2 columns end">
+                        <input type="radio" name="current_client" value="no" id="currentClientNo"><label
+                            for="currentClientNo">No</label>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label for="optIn">
+                            <input id="optIn" name="opt_in" type="checkbox" required="required" aria-required="true">
+                            <span>By providing my telephone number and/or email address, I CONSENT to Investors Group using this information to contact me for marketing purposes.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-6 medium-3 large-2 columns">
+                        <a href="#" class="outline-btn secondary">Send request</a>
+                    </div>
+                    <div class="small-6 medium-3 large-2 columns end">
+                        <a href="https://www.investorsgroup.com/external/lgen/retirement.html" class="outline-btn dominant">Cancel</a>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="success-message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="check"></div>
+                    <span>Success!</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <p>Your request for a call to discuss your RRSP has been received. An Investors Group Consultant
+                        will be in touch soon.</p></div>
+            </div>
+            <div class="row text-center">
+                <div class="small-10 small-push-1 medium-4 medium-push-4 columns">
+                    <a href="https://www.investorsgroup.com/external/lgen/retirement.html" class="outline-btn">Return to Retirement Page</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- IG|SA: END content block -->
 
     <div class="full-background footer2">
 
@@ -1214,44 +683,24 @@
 
 <script type="text/javascript" src="/en/js/corp/jquery.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <script type="text/javascript" src="/en/js/corp/foundation.js"></script>
 <script type="text/javascript" src="/en/js/corp/foundation.dropdown.js"></script>
 <script type="text/javascript"
         src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.accordion.min.js"></script>
-<script type="text/javascript" src="/en/js/corp/foundation.topbar.js"></script>
-<script type="text/javascript" src="/en/js/corp/slick.min.js"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
 <script type="text/javascript" src="/en/js/corp/languageToggle.js"></script>
 <script type="text/javascript" src="external/app/tribal/js/ig_utils.js"></script>
 <script type="text/javascript" src="external/app/tribal/js/global.js"></script>
 <script type="text/javascript" src="external/app/tribal/js/globalnav-green.js"></script>
 <script type="text/javascript" src="external/app/tribal/js/app.js"></script>
-<script>
-  $(document).foundation();
-</script>
+<!--<script type="text/javascript" src="./assets/js/scroll-manager.js"></script>-->
 
-<script type="text/javascript">_satellite.pageBottom();</script>
-
-<script type="text/javascript" src="external/app/tribal/js/bundle-landing-L2.js"></script>
-<script>
-  (function () {
-    function tips() {
-      $('.js-slick-wrap').slick({
-        prevArrow: '<span type="button" class="carousel-prev" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="Scroll_Tips_carousel_EventPage:"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-L.svg"></span>',
-        nextArrow: '<span type="button" class="carousel-next" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="Scroll_Tips_carousel_EventPage:"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-R.svg"></span>',
-        speed: 1200,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
-      });
-    }
-
-    tips();
-  }());
-</script>
-
-<script type="text/javascript" src="external/app/tribal/js/retirement-records.js"></script>
-
+<script language="JavaScript" type="text/javascript"
+        src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 
 <!--  -->
 <script type="text/javascript">
@@ -1293,6 +742,7 @@
 <!-- End Facebook Pixel Code -->
 
 
-<script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script>
 </body>
 </html>
+
+ 
