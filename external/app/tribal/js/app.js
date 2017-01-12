@@ -180,7 +180,7 @@
               if (isAcceptedCity(city)) {
                 $ctaPaneRequest.show();
                 $ctaPaneFaa.removeClass('pl-25');
-                // $('.js-geo').addClass('active');
+                $('.js-geo').addClass('active');
               }
             }
           }
