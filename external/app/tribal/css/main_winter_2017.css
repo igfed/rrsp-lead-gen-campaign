@@ -26070,12 +26070,13 @@ html {
 }
 
 .l2-section__tips--wpr .slick-dots {
-	margin-top: -40px !important;
+	margin: 60px auto 0 auto;
 }
 
-.l2-section__tips--wpr {
-	height: 200px !important;
-	margin: 50px auto 5px auto !important;
-}
+@media screen and (min-width: 767px) {
+	.l2-section__tips--wpr {
 
+		max-height: 300px;
+	}
+}
 /*# sourceMappingURL=main.css.map */

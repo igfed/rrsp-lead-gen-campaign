@@ -132,7 +132,7 @@
 }
 
 body.wc .wpr {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	background: #fff;
 }
 
@@ -807,23 +807,33 @@ article:not(.geo-invalid) .geo-unavailable {
 	display: inline-block;
 }
 
-@media only screen and (max-width: 480px) {
-	.l2-section__tips--wpr {
-		height: 260px;
+@media only screen and (min-width: 768px) {
+	.l2-section__tips--wpr .slick-slide {
+		max-height: 160px;
 	}
 }
 
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+	.l2-section__tips--wpr .slick-slide {
+		max-height: 275px;
+	}
+}
 
+@media only screen and (max-width: 419px) {
+	.l2-section__tips--wpr .slick-slide {
+		max-height: 350px;
+	}
+}
 @media only screen and (max-width: 420px) {
-	.l2-section__tips--wpr {
-		height: 290px !important;
-		margin: 10px auto 65px auto !important;
-	}
+	/*.l2-section__tips--wpr {*/
+		/*height: 290px !important;*/
+		/*margin: 10px auto 65px auto !important;*/
+	/*}*/
 
-	.l2-section__tips--wpr .slick-dots {
-		margin: 40px auto 10px auto !important;
-		text-align: center;
-	}
+	/*.l2-section__tips--wpr .slick-dots {*/
+		/*margin: 40px auto 10px auto !important;*/
+		/*text-align: center;*/
+	/*}*/
 
 	.area-l2.section.tips > .section.initial-view {
 		padding: 0;
