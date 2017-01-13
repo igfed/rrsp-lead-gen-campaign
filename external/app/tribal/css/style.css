@@ -247,9 +247,10 @@ body.wc .call-request-form input {
 	font-weight: 500;
 	text-transform: none;
 	padding: 0;
+	transition: 0.2s all ease;
 }
 
-body.wc .call-request-form input.error {
+body.wc .call-request-form input.error, body.wc .call-request-form input:focus {
 	background-color: transparent;
 	border-left-width: 1px;
 	border-right-width: 1px;
@@ -459,6 +460,7 @@ body.wc .call-request-form .success-message > div.row:first-child .check + span 
 		font-size: 4em;
 	}
 }
+
 
 body.wc .call-request-form .success-message > div.row:first-child p {
 	margin: 0 auto;
@@ -770,10 +772,13 @@ article:not(.geo-invalid) .geo-unavailable {
 	width: 180px;
 }
 
-
 #callForm hr {
 	border-color: #777;
 	margin: 40px 8px 0 8px;
+}
+
+#callForm legend {
+	border: none;
 }
 
 #callForm .outline-btn.dominant {
@@ -807,6 +812,17 @@ article:not(.geo-invalid) .geo-unavailable {
 	display: inline-block;
 }
 
+a.transcript-link {
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000;
+}
+
+.area-l2.section.tips p.sub-title {
+	margin-bottom: 60px !important;
+}
+
 @media only screen and (min-width: 768px) {
 	.l2-section__tips--wpr .slick-slide {
 		max-height: 160px;
@@ -821,20 +837,19 @@ article:not(.geo-invalid) .geo-unavailable {
 
 @media only screen and (max-width: 419px) {
 	.l2-section__tips--wpr .slick-slide {
-		max-height: 350px;
+		height: 480px;
 	}
 }
-@media only screen and (max-width: 420px) {
+
+@media only screen and (max-width: 440px) {
 	/*.l2-section__tips--wpr {*/
-		/*height: 290px !important;*/
-		/*margin: 10px auto 65px auto !important;*/
+	/*height: 290px !important;*/
+	/*margin: 10px auto 65px auto !important;*/
 	/*}*/
-
 	/*.l2-section__tips--wpr .slick-dots {*/
-		/*margin: 40px auto 10px auto !important;*/
-		/*text-align: center;*/
+	/*margin: 40px auto 10px auto !important;*/
+	/*text-align: center;*/
 	/*}*/
-
 	.area-l2.section.tips > .section.initial-view {
 		padding: 0;
 	}
@@ -843,10 +858,15 @@ article:not(.geo-invalid) .geo-unavailable {
 		padding: 0 15px !important;
 	}
 
-	article .expand-article-toggle .row  h2 {
-		padding-left: 5px;
-		padding-right: 5px;
-		width: 250px;
+	.area-l2.section.tips > article {
+		padding: 20px 0 !important;
+	}
+
+	article .expand-article-toggle .row h2 {
+		border: none;
+		width:220px;
+		margin: 0 auto;
+		padding: 10px 5px;
 	}
 
 	.retirement-cta-pane-content {
@@ -856,6 +876,11 @@ article:not(.geo-invalid) .geo-unavailable {
 	.area-l2.section.records {
 		margin-top: -60px;
 	}
+}
+
+.more .homepage-carousel .carousel-slides .slide-content > a {
+	margin-top: 25px;
+	position: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

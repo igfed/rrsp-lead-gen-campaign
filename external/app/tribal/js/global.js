@@ -154,7 +154,7 @@ var igTrack = (function(){
     if (label) {
       eventArgs = eventArgs.concat(label);
     }
-
+console.log(eventArgs)
     if (window['ga']) {
       TRACK.doGA(eventArgs);
     }

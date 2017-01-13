@@ -34,6 +34,9 @@
       if ($(".call-request-form").length) {
         setValidation();
       }
+      $('.js-video-play').on('click', function(){
+        console.log('video clicked');
+      });
     }
 
     function handleSubmit(event) {
