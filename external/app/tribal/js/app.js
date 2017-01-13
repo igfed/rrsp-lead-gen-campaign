@@ -146,29 +146,37 @@
 
   function GeoLocationModule(serviceDependency) {
     var acceptedCities = [
-      'toronto',
-      'windsor',
-      'richmond hill',
-      'dartmouth',
-      'calgary',
-      'edmonton',
-      'victoria',
-      'montreal',
-      'montréal',
-      'saskatoon',
-      'quebec city',
-      'ville de québec'
-    ];
+        'toronto',
+        'windsor',
+        'richmond hill',
+        'dartmouth',
+        'calgary',
+        'edmonton',
+        'victoria',
+        'montreal',
+        'montréal',
+        'saskatoon',
+        'quebec city',
+        'ville de québec'
+      ];
     var $ctaPaneRequest = $('.retirement-cta-pane--request');
     var $ctaPaneFaa = $('.retirement-cta-pane--faa');
+    var url = window.location.search;
+    var isSocialRefer = false;
+    if (url.indexOf('utm') >= 0) {
+      isSocialRefer = true;
+    }
 
-    getCoordinates();
+    if (isSocialRefer) {
+        getCoordinates();
+    }
 
     // Get current location
     function getCoordinates() {
       if (!navigator.geolocation) {
         return;
       }
+
       function success(position) {
         // If successful turn that lat and long in to an address
         var response = [];
