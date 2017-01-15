@@ -130,7 +130,6 @@ var igTrack = (function(){
     }
 
     if (window['ga'] && eventArgs) {
-      console.log('click',eventArgs)
       TRACK.doGA(eventArgs);
     }
   };
@@ -152,9 +151,15 @@ var igTrack = (function(){
 
     var label = element.getAttribute('data-tracking-label');
     if (label) {
+
+      // Adjust label if Request-a-call is not present
+      if (!$('a.js-geo').hasClass('active')) {
+        label = label.replace("_RC", "");
+      }
       eventArgs = eventArgs.concat(label);
     }
-console.log(eventArgs)
+
+console.log(eventArgs);
     if (window['ga']) {
       TRACK.doGA(eventArgs);
     }

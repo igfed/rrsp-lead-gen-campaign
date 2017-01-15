@@ -336,8 +336,9 @@
             <div class="video-spinner-container">
                 <div class="video-spinner"></div>
             </div>
-            <a href="#" title="video" class="js-video-play-btn">
-                <div class="video-image js-video-play"></div>
+            <a href="#" title="video" class="js-video-play-btn" >
+                <div class="video-image js-video-play" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                     data-tracking-label="2017RRSP_Play_Video_EventPage:Retirement" data-tracking-action="Play"></div>
             </a>
             <div class="video-container-responsive">
 
@@ -383,7 +384,8 @@
 
                 <!-- End of Brightcove Player -->
             </div>
-            <a href="/external/app/tribal/pdf/invest-in-life-Transcription-FR.pdf" class="transcript-link" target="_blank">Transcription</a>
+            <a href="/external/app/tribal/pdf/invest-in-life-Transcription-FR.pdf" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+               data-tracking-label="2017RRSP_Click_Transcript_EventPage:Retirement" class="transcript-link" target="_blank">Transcription</a>
         </div>
 
     </div>
@@ -412,7 +414,8 @@
                 <div class="mask"></div>
                 <div class="row">
                     <div class="small-12 columns">
-                        <h2>En savoir plus
+                        <h2 onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                            data-tracking-label="2017RRSP_Click_Expand_full_article_EventPage:Retirement">En savoir plus
                             <svg viewBox="0 0 25 25" height="20px" width="20px" y="0px" x="0px"
                                  preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -440,7 +443,8 @@
                     <div class="small-12 columns pdf">
                         <p>Renseignez-vous sur les autres stratégies pour maximiser votre REER.</p>
                         <a href="external\app\tribal\pdf\MPF1313_O_3209641_394053.pdf" target="_blank"
-                           class="outline-btn">Voyez nos 10 conseils</a>
+                           class="outline-btn" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                           data-tracking-label="2017RRSP_Click_Download_PDF_EventPage:Retirement">Voyez nos 10 conseils</a>
                     </div>
 
                 </div>
@@ -463,91 +467,114 @@
         <div class="records-container">
             <div class="records-list">
                 <div class="record-item investments" data-itemid="investments">
+                    <a href="#" class="record-item-inner investments" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Investments_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Investments_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
+                        investments
+                    </a>
                     <div class="modal-content">
                         <div class="title">Les investissements</div>
                         <div class="content"><p>Intégrer un compte d’épargne libre d’impôt (CELI) à votre plan est une excellente façon de contribuer à l’épargne pour votre retraite, puisqu’il permet de faire fructifier votre placement sans que vous soyez imposé sur les revenus. Si vous ne vous êtes jamais prévalu d’un CELI, vous pouvez cotiser jusqu’à 52 000 $ en 2017 si vous aviez au moins 18 ans en 2009.</p>
                             <p>Discutons des possibilités qui s’offrent à vous</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappelle</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Inv_Request_a_call_EventPage:Retirement">Demander qu’on me rappelle</a>
                             <a href="https://www.investorsgroup.com/external/search/index-fr.html"
-                               class="cta underline-link">Trouver un conseiller</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Inv_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                         </div>
                     </div>
-
-                    <a href="#" class="record-item-inner investments">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
-                        investments
-                    </a>
                 </div>
                 <div class="record-item tax-planning" data-itemid="tax-planning">
-                    <a href="#" class="record-item-inner tax-planning">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
+                    <a href="#" class="record-item-inner tax-planning" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Tax_Planning_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Tax_Planning_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
                         tax-planning
                     </a>
                     <div class="modal-content">
                         <div class="title">La planification fiscale</div>
                         <div class="content"><p>Pour vivre la retraite que vous désirez, vous devrez maximiser vos revenus de retraite sur une longue période. Nous pouvons vous aider à mettre en œuvre des stratégies de planification et de gestion fiscales efficaces qui optimiseront vos revenus de retraite en réduisant l’imposition et le risque de récupération de vos prestations de la Sécurité de la vieillesse.</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappelle</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Tax_Request_a_call_EventPage:Retirement">Demander qu’on me rappelle</a>
                             <a href="https://www.investorsgroup.com/external/search/index-fr.html"
-                               class="cta underline-link">Trouver un conseiller</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Tax_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                         </div>
                     </div>
                 </div>
                 <div class="record-item mortgage" data-itemid="mortgage">
-                    <a href="#" class="record-item-inner mortgage">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
+                    <a href="#" class="record-item-inner mortgage" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Mortgages_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Mortgages_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
                         mortgage
                     </a>
                     <div class="modal-content">
                         <div class="title">Prêts hypothécaires</div>
                         <div class="content"><p>Aurez-vous toujours un prêt hypothécaire quand vous arrêterez de travailler? Le rembourser avant votre retraite pourrait être moins urgent que vous le pensez. Dans un contexte de faibles taux d’intérêt, conserver votre hypothèque une fois à la retraite peut être judicieux. Communiquez avec nous pour discuter de ce qui convient le mieux à votre réalité, pour que vous puissiez profiter pleinement de votre retraite.</p>
                             <p>Discutons des possibilités qui s’offrent à vous</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappellel</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Mort_Request_a_call_EventPage:Retirement">Demander qu’on me rappellel</a>
                             <a href="http://www.investorsgroup.com/fr/3944.aspx"
-                               class="cta underline-link">Obtenir des conseils hypothécaires</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Mort_Find_an_advisor_RC_EventPage:Retirement">Obtenir des conseils hypothécaires</a>
                         </div>
                     </div>
                 </div>
                 <div class="record-item insurance" data-itemid="insurance">
-                    <a href="#" class="record-item-inner insurance">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
+                    <a href="#" class="record-item-inner insurance" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Insurance_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Insurance_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
                         insurance
                     </a>
                     <div class="modal-content">
                         <div class="title">Les assurances</div>
                         <div class="content"><p>Une retraite orchestrée pendant des années pourrait bien s’écrouler si vous ne la protégez pas. Nos conseillers peuvent vous aider à choisir les solutions d’assurance qui offrent les meilleures protections pour votre famille, votre mode de vie et votre plan de retraite.</p>
                             <p>Discutons des possibilités qui s’offrent à vous</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappelle</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Insur_Request_a_call_EventPage:Retirement">Demander qu’on me rappelle</a>
                             <a href="https://www.investorsgroup.com/external/search/index-fr.html"
-                               class="cta underline-link">Trouver un conseiller</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Insur_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                         </div>
                     </div>
                 </div>
                 <div class="record-item estate-planning" data-itemid="estate-planning">
-                    <a href="#" class="record-item-inner estate-planning">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
+                    <a href="#" class="record-item-inner estate-planning" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Estate_Planning_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Estate_Planning_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
                         estate-planning
                     </a>
                     <div class="modal-content">
                         <div class="title">La planification successorale</div>
                         <div class="content"><p>Quand on planifie en vue de notre retraite, on évite bien souvent de penser à la fin de notre vie et à la façon dont notre héritage sera transmis. La plupart des Canadiens sont préoccupés par les frais d’homologation, surtout quand il est question de l’impôt qu’ils doivent être prêts à payer. Nous pouvons vous aider à bien vous préparer et à élaborer un plan successoral dès maintenant pour que vos biens soient distribués conformément à vos volontés.</p>
                             <p>Discutons des possibilités qui s’offrent à vous</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappelle</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Estate_Request_a_call_EventPage:Retirement">Demander qu’on me rappelle</a>
                             <a href="https://www.investorsgroup.com/external/search/index-fr.html"
-                               class="cta underline-link">Trouver un conseiller</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Estate_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                         </div>
                     </div>
                 </div>
                 <div class="record-item retirement" data-itemid="retirement">
-                    <a href="#" class="record-item-inner retirement">
-                        <span class="overlay"><p>Cliquez pour voir</p></span>
+                    <a href="#" class="record-item-inner retirement" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                       data-tracking-label="2017RRSP_Expand__Retirement_EventPage:Retirement" data-tracking-action="Expand">
+                        <span class="overlay" onmouseover="igTrack.inline(this)" data-tracking-category="Consumer Engagement"
+                              data-tracking-label="2017RRSP_Hover__Retirement_EventPage:Retirement" data-tracking-action="Hover"><p>Cliquez pour voir</p></span>
                         retirement
                     </a>
                     <div class="modal-content">
                         <div class="title">Retirement</div>
                         <div class="content"><pLes REER forment la base de la planification de la retraite. Nous pouvons vous aider à en tirer le meilleur parti en mettant en place des cotisations mensuelles automatiques ou un prêt REER pour que vous profitiez pleinement de vos droits de cotisation. Vous pourriez ainsi augmenter votre remboursement d’impôt et faire fructifier plus d’argent à imposition différée dans votre REER.</p>
-                            <a href="request-a-call-fr.html" class="cta underline-link js-geo">Demander qu’on me rappelle</a>
+                            <a href="request-a-call-fr.html" class="cta underline-link js-geo" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Ret_Request_a_call_EventPage:Retirement">Demander qu’on me rappelle</a>
                             <a href="https://www.investorsgroup.com/external/search/index-fr.html"
-                               class="cta underline-link">Trouver un conseiller</a>
+                               class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                               data-tracking-label="2017RRSP_Click_Ret_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                         </div>
                     </div>
                 </div>
@@ -587,7 +614,8 @@
                     <div class="illustration"></div>
                     <h4>Demander qu’on me rappelle</h4>
                     <p>Des questions sur votre REER? Écrivez-nous, et nous vous rappellerons.</p>
-                    <a href="request-a-call-fr.html" class="outline-btn">Demander qu’on me rappelle</a>
+                    <a href="request-a-call-fr.html" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                       data-tracking-label="2017RRSP_Click_Request_a_call_EventPage:Retirement" class="outline-btn">Demander qu’on me rappelle</a>
                 </div>
             </div>
             <div class="retirement-cta-pane retirement-cta-pane--faa pl-25">
@@ -595,7 +623,8 @@
                     <div class="illustration"></div>
                     <h4>Trouver un conseiller</h4>
                     <p>Maximiser votre REER est essentiel pour votre plan de retraite. Nos conseillers peuvent vous aider.</p>
-                    <a href="https://www.investorsgroup.com/external/search/index-fr.html" class="outline-btn">Trouver un conseiller</a>
+                    <a href="https://www.investorsgroup.com/external/search/index-fr.html" class="outline-btn" onclick="igTrack.inline(this)" data-tracking-category="Consumer Conversion"
+                       data-tracking-label="2017RRSP_Click_Find_an_advisor_RC_EventPage:Retirement">Trouver un conseiller</a>
                 </div>
             </div>
         </div>
@@ -609,21 +638,24 @@
                 <div class="illustration" data-illustrationid="HL--retirement-A"></div>
                 <div class="header">Les cotisations périodiques</div>
                 <p>Le <i>moment</i> où vous commencez à contribuer à votre REER peut s’avérer aussi important que le <i>montant</i> de vos cotisations. En profitant de l’avis éclairé de nos conseillers, vous pourrez tirer profit des nombreux avantages qu’offrent les taux d’intérêt composé à long terme.</p>
-                <a href="http://investorsgroup.com/fr/le-ppa-pour-une-retraite-plus-aisee" class="underline-link" onclick="igTrack.inline(this)" data-tracking-label="LearnMore_Investments_1" data-tracking-category="Consider">en savoir plus</a>
+                <a href="http://investorsgroup.com/fr/le-ppa-pour-une-retraite-plus-aisee" target="_blank" class="underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Consideration"
+                   data-tracking-label="2017RRSP_Click_Regular_contributions_EventPage:Retirement">en savoir plus</a>
             </li>
             <li>
                 <h3>La constitution de votre épargne&nbsp;—</h3>
                 <div class="illustration" data-illustrationid="HL--retirement-B"></div>
                 <div class="header">La constitution de votre épargne</div>
                 <p>Déterminez comment maximiser vos cotisations à vos REER et CELI ainsi que vos autres investissements pour disposer de toutes les ressources nécessaires le moment venu.</p>
-                <a href="http://investorsgroup.com/fr/vaut-il-mieux-cotiser-a-un-reer-ou-un-celi" class="underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consider" data-tracking-label="LearnMore_Retirement_1">en savoir plus</a>
+                <a href="http://investorsgroup.com/fr/vaut-il-mieux-cotiser-a-un-reer-ou-un-celi" class="underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Consideration"
+                   data-tracking-label="2017RRSP_Click_Build_your_savings_EventPage:Retirement">en savoir plus</a>
             </li>
             <li>
                 <h3>La gestion de vos divers revenus&nbsp;—</h3>
                 <div class="illustration" data-illustrationid="HL--retirement-C"></div>
                 <div class="header">La gestion de vos divers revenus</div>
                 <p>L'outil Paye de retraite<sup>MC</sup> vous permet de regrouper et de gérer vos pensions, investissements, polices d'assurance et épargnes en un seul et même endroit.</p>
-                <a href="http://investorsgroup.com/fr/dans-les-medias/articles/planification-de-la-retraite/se-payer-du-bon-temps-a-la-retraite" class="underline-link">en savoir plus</a>
+                <a href="http://investorsgroup.com/fr/dans-les-medias/articles/planification-de-la-retraite/se-payer-du-bon-temps-a-la-retraite" class="underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Consideration"
+                   data-tracking-label="2017RRSP_Click_Manage_multiple_income_streams_EventPage:Retirement">en savoir plus</a>
             </li>
 
         </ul>
@@ -909,34 +941,34 @@
                 <div class="slick-track">
                     <div class="carousel-slides slick-slide slick-active" id="slide1">
                         <div class="slide-image">
-                            <a href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Comprendre_le_FERR_EventPage:Retirement">
+                            <a href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Comprendre_le_FERR_EventPage:Retirement">
                                 <img src="/external/app/tribal/images/l2-more/thepayoffnext.jpg" alt="">
                             </a>
                         </div>
                         <div class="slide-content">
                             <h2>
-                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Comprendre_le_FERR_EventPage:Retirement" href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/">Comprendre le FERR</a>
+                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Comprendre_le_FERR_EventPage:Retirement" href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/">Comprendre le FERR</a>
                             </h2>
                             <div class="excerpt">
                                 <p>Il vous faudra bientôt transférer vos REER dans un fonds enregistré de revenu retraite.</p>
                             </div>
-                            <a href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Comprendre_le_FERR_EventPage:Retirement" class="cta underline-link">en savoir plus</a>
+                            <a href="http://www.investorsgroup.com/plus/fr/2014/10/comprendre-le-ferr/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Comprendre_le_FERR_EventPage:Retirement" class="cta underline-link">en savoir plus</a>
                         </div>
                     </div>
                     <div class="carousel-slides slick-slide slick-active" id="slide2">
                         <div class="slide-image">
-                            <a href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement">
+                            <a href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement">
                                 <img src="/external/app/tribal/images/l2-more/retirementincome.jpg" alt="">
                             </a>
                         </div>
                         <div class="slide-content">
                             <h2>
-                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement" href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/">Retraite:continuez de recevoir un salaire</a>
+                                <a onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement" href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/">Retraite:continuez de recevoir un salaire</a>
                             </h2>
                             <div class="excerpt">
                                 <p>Ce n’est pas parce que vous prenez votre retraite que les entrées d’argent doivent cesser...</p>
                             </div>
-                            <a href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/" class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="Trendingadvice&amp;stories_Click_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement">en savoir plus</a>
+                            <a href="http://www.investorsgroup.com/plus/fr/2015/10/retraite-continuez-de-recevoir-un-salaire/" class="cta underline-link" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-label="2017RRSP_Click_More_story_Retraite:continuez_de_recevoir_un_salaire_EventPage:Retirement">en savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -1185,8 +1217,8 @@
   (function () {
     function tips() {
       $('.js-slick-wrap').slick({
-        prevArrow: '<span type="button" class="carousel-prev" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="Scroll_Tips_carousel_EventPage:"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-L.svg"></span>',
-        nextArrow: '<span type="button" class="carousel-next" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="Scroll_Tips_carousel_EventPage:"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-R.svg"></span>',
+        prevArrow: '<span type="button" class="carousel-prev" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="2017RRSP_Scroll_Tips_carousel_EventPage:Retirement"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-L.svg"></span>',
+        nextArrow: '<span type="button" class="carousel-next" onclick="igTrack.inline(this)" data-tracking-category="Consumer Engagement" data-tracking-action="Scroll" data-tracking-label="2017RRSP_Scroll_Tips_carousel_EventPage:Retirement"><img src="external/app/tribal/images/Arrow-MainArticle-Carousel-Green-R.svg"></span>',
         speed: 1200,
         dots: true,
         slidesToShow: 1,
