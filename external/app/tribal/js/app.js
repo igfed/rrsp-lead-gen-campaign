@@ -13,7 +13,10 @@
   function init() {
     service = new ServiceModule();
 
-    callRequest = new CallRequestModule(service);
+    // Horribly hack-y
+    if ($('body').hasClass('wc')) {
+      callRequest = new CallRequestModule(service);
+    }
     geoLocation = new GeoLocationModule(service);
     seeMore = new SeeMoreModule();
     theme = new ThemeModule();
