@@ -804,7 +804,7 @@ article:not(.geo-invalid) .geo-unavailable {
 }
 
 .js-geo {
-	display: none;
+
 }
 
 .js-geo.active {

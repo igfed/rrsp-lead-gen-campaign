@@ -171,7 +171,7 @@
     }
 
     if (isSocialRefer) {
-        getCoordinates();
+        // getCoordinates();
     }
 
     // Get current location

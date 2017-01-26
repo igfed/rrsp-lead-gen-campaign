@@ -153,9 +153,9 @@ var igTrack = (function(){
     if (label) {
 
       // Adjust label if Request-a-call is not present
-      if (!$('a.js-geo').hasClass('active')) {
-        label = label.replace("_RC", "");
-      }
+      // if (!$('a.js-geo').hasClass('active')) {
+      //   label = label.replace("_RC", "");
+      // }
       eventArgs = eventArgs.concat(label);
     }
 
