@@ -62,7 +62,8 @@
           }
         }
 
-        requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join() : "";
+        // requestData.areas_of_interest = (chosenTopics.length) ? chosenTopics.join() : "";
+        requestData.areas_of_interest = "";
         requestData.opt_in = "Yes";
         requestData.language = $('body').attr('data-lang').toUpperCase();
         submitCallRequest(requestData);
